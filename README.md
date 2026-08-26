@@ -147,6 +147,32 @@ Se abre en `http://localhost:8501`. En modo **demo** hay 4 usuarios de ejemplo (
 3. **Ajustar `.env`:** `APP_MODE=prod`, y verificar `GCP_PROJECT`, `BQ_DATASET`, `BQ_TABLA_COMISIONES`, `BQ_TABLA_CONFIRMACIONES`, `MANAGER_EMAILS`.
 4. **Ajustar el SELECT** de `BigQueryService.get_comisiones()` en `services/data_service.py` a los nombres reales de columnas de la tabla oficial (está marcado con `TODO`). La app espera: `id_comision`, `periodo`, `correo_usuario`, `nombre`, `indicador`, `meta`, `ejecucion`, `cumplimiento`, `monto_comision` — si la tabla oficial usa otros nombres, basta con aliasarlos en ese query.
 
+## Desplegar en Streamlit Community Cloud
+
+El repo ya está en `github.com/johhanramirez-habi/comisiones_HC-app` (privado). Falta el único
+paso que no se puede hacer por comando (requiere tu login/OAuth en el navegador):
+
+1. Entra a [share.streamlit.io](https://share.streamlit.io) con tu cuenta de GitHub.
+2. **New app** → repo `johhanramirez-habi/comisiones_HC-app`, branch `main`, archivo principal
+   `app.py`.
+3. En **Advanced settings → Secrets**, pega (formato TOML):
+   ```toml
+   APP_MODE = "file"
+   MANAGER_EMAILS = "johhanramirez@habi.co"
+   ```
+   (`file` usa `data/comisiones_internas_hc_final.csv`, que ya está en el repo; no hace falta
+   ninguna credencial de GCP para arrancar.)
+4. Deploy. Cada push a `main` en GitHub redespliega solo.
+
+⚠️ **Importante — las confirmaciones no son persistentes en este modo:** sin credenciales de
+BigQuery, `FileService` cae a guardar las confirmaciones (`aceptar`/`rechazar`) en un CSV local
+(`data/confirmaciones_demo.csv`). El filesystem de Streamlit Community Cloud es efímero — se
+reinicia con cada redeploy o cuando la app hiberna por inactividad — así que esas respuestas
+**se pueden perder**. Para que las decisiones de supervisores/managers queden guardadas de forma
+confiable hay que pasar a `APP_MODE=prod` y subir una service account de GCP (con acceso de
+lectura a la tabla de comisiones y lectura/escritura solo en `comisiones_confirmaciones`) como
+secreto adicional — ver "Pasar a producción (BigQuery)" arriba.
+
 ## Roles
 
 - **Usuario individual:** ingresa su correo (placeholder de login) y ve solo sus comisiones. Puede aceptar, o rechazar con comentario obligatorio, y cambiar su respuesta.
@@ -154,8 +180,13 @@ Se abre en `http://localhost:8501`. En modo **demo** hay 4 usuarios de ejemplo (
 
 ## Próximos pasos (según el plan)
 
-- [ ] Login real: Cloud Run + IAP (recomendado) o `streamlit-google-auth`.
-- [ ] Hosting: Cloud Run (recomendado) vs Streamlit Community Cloud.
+- [x] Versionar este repo — en GitHub (`johhanramirez-habi/comisiones_HC-app`, privado), no en
+      GitLab como decía el plan original.
+- [x] Hosting: se eligió Streamlit Community Cloud sobre Cloud Run (ver sección de arriba); falta
+      el paso manual de conectar el repo en share.streamlit.io.
+- [ ] Login real: hoy sigue el placeholder de correo. Streamlit Community Cloud no soporta IAP;
+      la alternativa ahí es `streamlit-google-auth`.
+- [ ] Confirmaciones persistentes en el deploy actual: requiere pasar a `APP_MODE=prod` con
+      credenciales de GCP (ver advertencia de la sección de arriba).
 - [ ] Notificación a BI cuando llega un rechazo (correo/Slack).
 - [ ] Conexión del flujo de rechazos con el motor de retroactivos.
-- [ ] Versionar este repo en GitLab.
