@@ -1,0 +1,25 @@
+id_comision,periodo,correo_usuario,posicion,indicador,meta,ejecucion,cumplimiento,monto_comision
+2026-05|ana.gomez@habicredit.co|desembolsos,2026-05,ana.gomez@habicredit.co,Analista Legalización,desembolsos,10,12,1.2,3500000
+2026-05|ana.gomez@habicredit.co|radicacion,2026-05,ana.gomez@habicredit.co,Analista Legalización,radicacion,25,21,0.84,1200000
+2026-05|ana.gomez@habicredit.co|radicacion_monto,2026-05,ana.gomez@habicredit.co,Analista Legalización,radicacion_monto,900000000,750000000,0.833,800000
+2026-05|carlos.perez@habicredit.co|desembolsos,2026-05,carlos.perez@habicredit.co,Analista de Radicación,desembolsos,10,12,1.2,3500000
+2026-05|carlos.perez@habicredit.co|radicacion,2026-05,carlos.perez@habicredit.co,Analista de Radicación,radicacion,25,21,0.84,1200000
+2026-05|carlos.perez@habicredit.co|radicacion_monto,2026-05,carlos.perez@habicredit.co,Analista de Radicación,radicacion_monto,900000000,750000000,0.833,800000
+2026-05|laura.diaz@habicredit.co|desembolsos,2026-05,laura.diaz@habicredit.co,K.A.M. - General,desembolsos,10,12,1.2,3500000
+2026-05|laura.diaz@habicredit.co|radicacion,2026-05,laura.diaz@habicredit.co,K.A.M. - General,radicacion,25,21,0.84,1200000
+2026-05|laura.diaz@habicredit.co|radicacion_monto,2026-05,laura.diaz@habicredit.co,K.A.M. - General,radicacion_monto,900000000,750000000,0.833,800000
+2026-05|johhanramirez@habi.co|desembolsos,2026-05,johhanramirez@habi.co,Gerente Ops Liquidez,desembolsos,10,12,1.2,3500000
+2026-05|johhanramirez@habi.co|radicacion,2026-05,johhanramirez@habi.co,Gerente Ops Liquidez,radicacion,25,21,0.84,1200000
+2026-05|johhanramirez@habi.co|radicacion_monto,2026-05,johhanramirez@habi.co,Gerente Ops Liquidez,radicacion_monto,900000000,750000000,0.833,800000
+2026-06|ana.gomez@habicredit.co|desembolsos,2026-06,ana.gomez@habicredit.co,Analista Legalización,desembolsos,10,12,1.2,3500000
+2026-06|ana.gomez@habicredit.co|radicacion,2026-06,ana.gomez@habicredit.co,Analista Legalización,radicacion,25,21,0.84,1200000
+2026-06|ana.gomez@habicredit.co|radicacion_monto,2026-06,ana.gomez@habicredit.co,Analista Legalización,radicacion_monto,900000000,750000000,0.833,800000
+2026-06|carlos.perez@habicredit.co|desembolsos,2026-06,carlos.perez@habicredit.co,Analista de Radicación,desembolsos,10,12,1.2,3500000
+2026-06|carlos.perez@habicredit.co|radicacion,2026-06,carlos.perez@habicredit.co,Analista de Radicación,radicacion,25,21,0.84,1200000
+2026-06|carlos.perez@habicredit.co|radicacion_monto,2026-06,carlos.perez@habicredit.co,Analista de Radicación,radicacion_monto,900000000,750000000,0.833,800000
+2026-06|laura.diaz@habicredit.co|desembolsos,2026-06,laura.diaz@habicredit.co,K.A.M. - General,desembolsos,10,12,1.2,3500000
+2026-06|laura.diaz@habicredit.co|radicacion,2026-06,laura.diaz@habicredit.co,K.A.M. - General,radicacion,25,21,0.84,1200000
+2026-06|laura.diaz@habicredit.co|radicacion_monto,2026-06,laura.diaz@habicredit.co,K.A.M. - General,radicacion_monto,900000000,750000000,0.833,800000
+2026-06|johhanramirez@habi.co|desembolsos,2026-06,johhanramirez@habi.co,Gerente Ops Liquidez,desembolsos,10,12,1.2,3500000
+2026-06|johhanramirez@habi.co|radicacion,2026-06,johhanramirez@habi.co,Gerente Ops Liquidez,radicacion,25,21,0.84,1200000
+2026-06|johhanramirez@habi.co|radicacion_monto,2026-06,johhanramirez@habi.co,Gerente Ops Liquidez,radicacion_monto,900000000,750000000,0.833,800000

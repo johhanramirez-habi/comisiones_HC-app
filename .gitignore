@@ -1,0 +1,25 @@
+# Entorno
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Secretos y configuracion local
+.env
+
+# Datos locales del modo demo (respuestas de prueba)
+data/confirmaciones_demo.csv
+
+# Datos de compensacion / sensibles que ningun codigo de la app lee
+# (no hacen falta para desplegar; se quedan solo en la maquina local)
+data/Metas comisiones internas HC - data.csv
+data/diccionario_indicadores_comisiones_co.csv
+
+# Streamlit
+.streamlit/secrets.toml
+
+# SO / editor
+.DS_Store
+
+# Tests
+.pytest_cache/
