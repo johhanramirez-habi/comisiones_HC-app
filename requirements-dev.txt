@@ -1,0 +1,6 @@
+# Solo para desarrollo local de api/ y tests/ (Streamlit Cloud nunca los instala).
+-r requirements.txt
+fastapi==0.128.8
+uvicorn==0.39.0
+httpx==0.28.1
+pytest==8.4.2

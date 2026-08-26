@@ -125,8 +125,10 @@ cd ~/Documents/comisiones_HC-app
 python3 -m venv .venv
 source .venv/bin/activate
 
-# 2. Dependencias
+# 2. Dependencias (solo la app Streamlit)
 pip install -r requirements.txt
+# Si vas a tocar api/ o correr tests/test_api.py, instala tambien:
+# pip install -r requirements-dev.txt
 
 # 3. Configuración
 cp .env.example .env    # arranca en APP_MODE=demo
@@ -163,6 +165,12 @@ paso que no se puede hacer por comando (requiere tu login/OAuth en el navegador)
    (`file` usa `data/comisiones_internas_hc_final.csv`, que ya está en el repo; no hace falta
    ninguna credencial de GCP para arrancar.)
 4. Deploy. Cada push a `main` en GitHub redespliega solo.
+
+Nota: el repo fija la versión de Python en `.python-version` (3.11) para que `pyarrow`/`db-dtypes`
+instalen desde wheel precompilada en vez de compilar desde código fuente (eso es lo que se ve
+como `Preparing metadata (pyproject.toml)` colgado varios minutos en el log de deploy). Si el
+deploy ya estaba corriendo antes de este cambio, hace falta **Reboot app** (o borrar y crear de
+nuevo) desde el menú de "Manage app" para que tome el archivo nuevo.
 
 ⚠️ **Importante — las confirmaciones no son persistentes en este modo:** sin credenciales de
 BigQuery, `FileService` cae a guardar las confirmaciones (`aceptar`/`rechazar`) en un CSV local
