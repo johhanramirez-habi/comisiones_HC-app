@@ -1443,13 +1443,13 @@ BEGIN
           brokers_mas_2_rad,
           --pre.broker_min_rad,
           --pre.productividad,
-          --SAFE_DIVIDE(vinculaciones, brokers_nuevos) vincu_perc,
-          --SAFE_DIVIDE(brokers_mas_2_rad, broker_min_rad) prod,
 
-          SAFE_DIVIDE(
-            SAFE_DIVIDE(vinculaciones, brokers_nuevos) + SAFE_DIVIDE(brokers_mas_2_rad, broker_min_rad)
-          , 2) AS nuevos_brokers,
-        FROM pre 
+          -- Meta Nuevos Broker (Esquemas/202608 Comisiones Habicredit COL): un solo indicador
+          -- combinado -- broker nuevo del mes que ademas radico minimo 2 operaciones -- sobre
+          -- la meta de brokers nuevos. broker_min_rad es una meta aparte que solo aplica a la
+          -- Gerente Comercial (ver nuevos_brokers_gerente), no a los directores.
+          SAFE_DIVIDE(brokers_mas_2_rad, brokers_nuevos) AS nuevos_brokers,
+        FROM pre
         ORDER BY 1 ASC
     ),
 
