@@ -115,6 +115,7 @@ catálogo vive en BigQuery con otro nombre, hay que ajustar esas dos consultas.
 | API futura (`api/`, sobre `services/data_service.py`) | igual que la app | igual que la app — nunca `comisiones_resultado` ni metas |
 | `sql/validaciones/*.sql` | `metas_comisiones_internas`, `diccionario_indicadores_comisiones_co` (nombre asumido), `comisiones_internas_hc_final`, `comisiones_internas_hc_finanzas` | nada — solo `SELECT` |
 | `scripts/validar.py` | ejecuta los 3 `.sql` de arriba contra BigQuery | nada (imprime hallazgos, sale con `exit 1` si hay alguno) |
+| `scripts/consultar_comisiones.py` | motor paso 2, solo lectura, para un periodo (via `bq` CLI) | `data/historico_comisiones.csv` (append, nunca sobrescribe; agrega columna `fecha_ejecucion_utc`) |
 
 ## Puesta en marcha (local)
 

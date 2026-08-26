@@ -1,0 +1,287 @@
+mes_comision,posicion,beneficiado,indicador,ejecucion,meta_value,base_commission,p_ejecucion,pago,fecha_ejecucion_utc
+2026-08-01,Analista Legalización,maryipoveda@habicredit.co,cumplimiento_rotacion,0.7578125,0.75,150000.0,1.0104166666666667,151562.5,2026-08-26 20:22
+2026-08-01,Analista Legalización,linabedoya@habi.co,cumplimiento_rotacion,0.6436781609195402,0.75,150000.0,0.8582375478927203,128735.63218390803,2026-08-26 20:22
+2026-08-01,Analista Legalización,geidygonzalez@habicredit.co,cumplimiento_rotacion,0.303030303030303,0.75,150000.0,0.404040404040404,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,nohoravarela@habicredit.co,cumplimiento_rotacion,0.3775510204081632,0.75,150000.0,0.5034013605442177,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,alejandraorganista@habi.co,cumplimiento_rotacion,0.7666666666666667,0.75,150000.0,1.0222222222222224,153333.33333333334,2026-08-26 20:22
+2026-08-01,Analista Legalización,danielibague@habicredit.co,cumplimiento_rotacion,0.5714285714285714,0.75,150000.0,0.7619047619047619,45000.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,yessicabarrera@habicredit.co,cumplimiento_rotacion,0.4629629629629629,0.75,150000.0,0.6172839506172839,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,leydemontoya@habicredit.co,cumplimiento_rotacion,0.5539568345323741,0.75,150000.0,0.7386091127098321,45000.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,johannacardenas@habicredit.co,cumplimiento_rotacion,0.3809523809523809,0.75,150000.0,0.5079365079365079,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,ivetthecasanas@habicredit.co,cumplimiento_rotacion,0.3577981651376147,0.75,150000.0,0.4770642201834862,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,eblinsmontoya@habi.co,cumplimiento_rotacion,0.1883116883116883,0.75,150000.0,0.2510822510822511,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,lauracuevas@habicredit.co,cumplimiento_rotacion,0.5054945054945055,0.75,150000.0,0.6739926739926739,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,yeissonortiz@habi.co,cumplimiento_rotacion,0.5615384615384615,0.75,150000.0,0.7487179487179487,45000.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,jhonathanflorez@habicredit.co,cumplimiento_rotacion,0.6935483870967742,0.75,150000.0,0.924731182795699,138709.67741935485,2026-08-26 20:22
+2026-08-01,Analista Legalización,nicolfonseca@habi.co,cumplimiento_rotacion,0.509090909090909,0.75,150000.0,0.6787878787878787,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,shirleydiaz@habicredit.co,cumplimiento_rotacion,0.7844827586206896,0.75,150000.0,1.0459770114942528,156896.5517241379,2026-08-26 20:22
+2026-08-01,Analista Legalización,jhonathanflorez@habicredit.co,desembolsos,14.0,40.0,500000.0,0.40053874525,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,danielibague@habicredit.co,desembolsos,32.0,50.0,500000.0,0.506270838625,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,ivetthecasanas@habicredit.co,desembolsos,13.0,40.0,500000.0,0.327888009625,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,linabedoya@habi.co,desembolsos,26.0,40.0,500000.0,0.581674275,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,johannacardenas@habicredit.co,desembolsos,5.0,40.0,500000.0,0.113411300375,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,jeydirodriguez@habicredit.co,desembolsos,6.0,20.0,200000.0,0.3546609575,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,geidygonzalez@habicredit.co,desembolsos,15.0,40.0,500000.0,0.339506329875,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,nicolfonseca@habi.co,desembolsos,13.0,25.0,500000.0,0.5233687804166667,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,eblinsmontoya@habi.co,desembolsos,18.0,50.0,500000.0,0.297908903625,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,nohoravarela@habicredit.co,desembolsos,12.0,40.0,500000.0,0.289286117375,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,yessicabarrera@habicredit.co,desembolsos,14.0,40.0,500000.0,0.4095564691875,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,yeissonortiz@habi.co,desembolsos,26.0,50.0,500000.0,0.442902661375,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,leydemontoya@habicredit.co,desembolsos,24.0,50.0,500000.0,0.456034407625,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,shirleydiaz@habicredit.co,desembolsos,13.0,50.0,500000.0,0.2731711455833333,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,alejandraorganista@habi.co,desembolsos,13.0,50.0,500000.0,0.237290202625,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,lauracuevas@habicredit.co,desembolsos,13.0,50.0,500000.0,0.2238001872916666,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,maryipoveda@habicredit.co,desembolsos,23.0,50.0,500000.0,0.4202200879583333,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,nicolfonseca@habi.co,firma_ordenes_ofertas_escrituras,39.0,30.0,200000.0,1.3,260000.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,geidygonzalez@habicredit.co,firma_ordenes_ofertas_escrituras,17.0,50.0,200000.0,0.34,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,jeydirodriguez@habicredit.co,firma_ordenes_ofertas_escrituras,12.0,20.0,200000.0,0.6,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,leydemontoya@habicredit.co,firma_ordenes_ofertas_escrituras,51.0,55.0,200000.0,0.9272727272727272,185454.54545454544,2026-08-26 20:22
+2026-08-01,Analista Legalización,yeissonortiz@habi.co,firma_ordenes_ofertas_escrituras,54.0,55.0,200000.0,0.9818181818181818,196363.63636363635,2026-08-26 20:22
+2026-08-01,Analista Legalización,lauracuevas@habicredit.co,firma_ordenes_ofertas_escrituras,39.0,55.0,200000.0,0.7090909090909091,60000.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,shirleydiaz@habicredit.co,firma_ordenes_ofertas_escrituras,62.0,55.0,200000.0,1.1272727272727272,225454.54545454544,2026-08-26 20:22
+2026-08-01,Analista Legalización,danielibague@habicredit.co,firma_ordenes_ofertas_escrituras,42.0,55.0,200000.0,0.7636363636363637,60000.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,jhonathanflorez@habicredit.co,firma_ordenes_ofertas_escrituras,37.0,50.0,200000.0,0.74,60000.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,eblinsmontoya@habi.co,firma_ordenes_ofertas_escrituras,27.0,55.0,200000.0,0.4909090909090909,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,linabedoya@habi.co,firma_ordenes_ofertas_escrituras,39.0,50.0,200000.0,0.78,60000.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,maryipoveda@habicredit.co,firma_ordenes_ofertas_escrituras,49.0,55.0,200000.0,0.8909090909090909,178181.81818181818,2026-08-26 20:22
+2026-08-01,Analista Legalización,yessicabarrera@habicredit.co,firma_ordenes_ofertas_escrituras,39.0,50.0,200000.0,0.78,60000.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,johannacardenas@habicredit.co,firma_ordenes_ofertas_escrituras,35.0,50.0,200000.0,0.7,60000.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,alejandraorganista@habi.co,firma_ordenes_ofertas_escrituras,51.0,55.0,200000.0,0.9272727272727272,185454.54545454544,2026-08-26 20:22
+2026-08-01,Analista Legalización,nohoravarela@habicredit.co,firma_ordenes_ofertas_escrituras,17.0,50.0,200000.0,0.34,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,ivetthecasanas@habicredit.co,firma_ordenes_ofertas_escrituras,31.0,50.0,200000.0,0.62,0.0,2026-08-26 20:22
+2026-08-01,Analista Legalización,lauracuevas@habicredit.co,monto_desembolso_leg,2251204495.0,12000000000.0,500000.0,,,2026-08-26 20:22
+2026-08-01,Analista Legalización,leydemontoya@habicredit.co,monto_desembolso_leg,5184825783.0,12000000000.0,500000.0,,,2026-08-26 20:22
+2026-08-01,Analista Legalización,alejandraorganista@habi.co,monto_desembolso_leg,2574964863.0,12000000000.0,500000.0,,,2026-08-26 20:22
+2026-08-01,Analista Legalización,nohoravarela@habicredit.co,monto_desembolso_leg,2228577878.0,8000000000.0,500000.0,,,2026-08-26 20:22
+2026-08-01,Analista Legalización,yessicabarrera@habicredit.co,monto_desembolso_leg,3752903507.0,8000000000.0,500000.0,,,2026-08-26 20:22
+2026-08-01,Analista Legalización,yeissonortiz@habi.co,monto_desembolso_leg,4389663873.0,12000000000.0,500000.0,,,2026-08-26 20:22
+2026-08-01,Analista Legalización,jeydirodriguez@habicredit.co,monto_desembolso_leg,1637287660.0,4000000000.0,200000.0,,,2026-08-26 20:22
+2026-08-01,Analista Legalización,johannacardenas@habicredit.co,monto_desembolso_leg,814580806.0,8000000000.0,500000.0,,,2026-08-26 20:22
+2026-08-01,Analista Legalización,jhonathanflorez@habicredit.co,monto_desembolso_leg,3608619924.0,8000000000.0,500000.0,,,2026-08-26 20:22
+2026-08-01,Analista Legalización,nicolfonseca@habi.co,monto_desembolso_leg,3160425365.0,6000000000.0,500000.0,,,2026-08-26 20:22
+2026-08-01,Analista Legalización,maryipoveda@habicredit.co,monto_desembolso_leg,4565282111.0,12000000000.0,500000.0,,,2026-08-26 20:22
+2026-08-01,Analista Legalización,eblinsmontoya@habi.co,monto_desembolso_leg,2829813687.0,12000000000.0,500000.0,,,2026-08-26 20:22
+2026-08-01,Analista Legalización,ivetthecasanas@habicredit.co,monto_desembolso_leg,2646208154.0,8000000000.0,500000.0,,,2026-08-26 20:22
+2026-08-01,Analista Legalización,geidygonzalez@habicredit.co,monto_desembolso_leg,2432101278.0,8000000000.0,500000.0,,,2026-08-26 20:22
+2026-08-01,Analista Legalización,danielibague@habicredit.co,monto_desembolso_leg,4470500127.0,12000000000.0,500000.0,,,2026-08-26 20:22
+2026-08-01,Analista Legalización,linabedoya@habi.co,monto_desembolso_leg,4106788400.0,8000000000.0,500000.0,,,2026-08-26 20:22
+2026-08-01,Analista Legalización,shirleydiaz@habicredit.co,monto_desembolso_leg,3436107494.0,12000000000.0,500000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,michelabustos@habicredit.co,dias_sancion,5.701986754966886,6.0,400000.0,1.0522648083623696,420905.9233449478,2026-08-26 20:22
+2026-08-01,Analista Radicación,leidymoscoso@habi.co,dias_sancion,3.2835820895522376,6.0,400000.0,1.827272727272728,600000.0,2026-08-26 20:22
+2026-08-01,Analista Radicación,vivianavinasco@habicredit.co,dias_sancion,6.007692307692305,6.0,400000.0,0.9987195902688863,399487.8361075546,2026-08-26 20:22
+2026-08-01,Analista Radicación,nataliaaltamar@habicredit.co,dias_sancion,3.975000000000001,6.0,300000.0,1.5094339622641508,450000.0,2026-08-26 20:22
+2026-08-01,Analista Radicación,tomasospina@habicredit.co,dias_sancion,10.57317073170732,6.0,300000.0,0.5674740484429064,0.0,2026-08-26 20:22
+2026-08-01,Analista Radicación,josejuliao@habicredit.co,dias_sancion,6.068376068376073,6.0,400000.0,0.9887323943661964,395492.9577464786,2026-08-26 20:22
+2026-08-01,Analista Radicación,katerinecardena@habicredit.co,dias_sancion,7.000000000000001,6.0,300000.0,0.857142857142857,257142.8571428571,2026-08-26 20:22
+2026-08-01,Analista Radicación,karolguerrero@habicredit.co,dias_sancion,6.10948905109489,6.0,300000.0,0.982078853046595,294623.6559139785,2026-08-26 20:22
+2026-08-01,Analista Radicación,yudyzamudio@habicredit.co,dias_sancion,3.148148148148146,6.0,300000.0,1.9058823529411777,450000.0,2026-08-26 20:22
+2026-08-01,Analista Radicación,angiealvarado@habicredit.co,dias_sancion,3.2020202020202015,6.0,300000.0,1.873817034700316,450000.0,2026-08-26 20:22
+2026-08-01,Analista Radicación,monicagonzalez@habicredit.co,dias_sancion,5.858757062146894,6.0,300000.0,1.0241080038572803,307232.40115718415,2026-08-26 20:22
+2026-08-01,Analista Radicación,hallersonescobar@habicredit.co,dias_sancion,4.663934426229509,6.0,300000.0,1.2864674868189805,385940.24604569416,2026-08-26 20:22
+2026-08-01,Analista Radicación,claudiamurcia@habicredit.co,dias_sancion,6.999999999999997,6.0,400000.0,0.8571428571428574,342857.14285714296,2026-08-26 20:22
+2026-08-01,Analista Radicación,yeinerlargo@habicredit.co,dias_sancion,4.05737704918033,6.0,400000.0,1.478787878787878,591515.1515151513,2026-08-26 20:22
+2026-08-01,Analista Radicación,johannelles@habicredit.co,dias_sancion,5.152941176470588,6.0,400000.0,1.1643835616438358,465753.42465753434,2026-08-26 20:22
+2026-08-01,Analista Radicación,ginadiaz@habicredit.co,negocios_pre_legalizados,62.0,85.0,400000.0,0.7294117647058823,120000.0,2026-08-26 20:22
+2026-08-01,Analista Radicación,angiealvarado@habicredit.co,radicacion,173.0,180.0,300000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,josejuliao@habicredit.co,radicacion,188.0,230.0,400000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,hallersonescobar@habicredit.co,radicacion,118.0,230.0,300000.0,0.5130434782608696,0.0,2026-08-26 20:22
+2026-08-01,Analista Radicación,karolguerrero@habicredit.co,radicacion,136.0,255.0,300000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,yudyzamudio@habicredit.co,radicacion,204.0,250.0,300000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,leidymoscoso@habi.co,radicacion,204.0,250.0,400000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,ginadiaz@habicredit.co,radicacion,109.0,120.0,350000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,vivianavinasco@habicredit.co,radicacion,181.0,230.0,400000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,yeinerlargo@habicredit.co,radicacion,297.0,255.0,400000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,tomasospina@habicredit.co,radicacion,79.0,255.0,300000.0,0.3098039215686274,0.0,2026-08-26 20:22
+2026-08-01,Analista Radicación,johannelles@habicredit.co,radicacion,330.0,255.0,400000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,katerinecardena@habicredit.co,radicacion,100.0,250.0,300000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,monicagonzalez@habicredit.co,radicacion,201.0,255.0,300000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,claudiamurcia@habicredit.co,radicacion,161.0,255.0,400000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,michelabustos@habicredit.co,radicacion,118.0,250.0,400000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,nataliaaltamar@habicredit.co,radicacion,85.0,150.0,300000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,hallersonescobar@habicredit.co,radicacion_monto,19878049582.0,46000000000.0,300000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,katerinecardena@habicredit.co,radicacion_monto,30005200032.0,50000000000.0,300000.0,0.60010400064,0.0,2026-08-26 20:22
+2026-08-01,Analista Radicación,josejuliao@habicredit.co,radicacion_monto,40316943790.0,46000000000.0,400000.0,0.8764552997826087,350582.1199130435,2026-08-26 20:22
+2026-08-01,Analista Radicación,karolguerrero@habicredit.co,radicacion_monto,36897663395.0,51000000000.0,300000.0,0.7234835959803921,90000.0,2026-08-26 20:22
+2026-08-01,Analista Radicación,leidymoscoso@habi.co,radicacion_monto,56925402340.0,50000000000.0,400000.0,1.1385080468,455403.21872,2026-08-26 20:22
+2026-08-01,Analista Radicación,monicagonzalez@habicredit.co,radicacion_monto,48028742321.0,51000000000.0,300000.0,0.941740045509804,282522.0136529412,2026-08-26 20:22
+2026-08-01,Analista Radicación,johannelles@habicredit.co,radicacion_monto,76501225393.0,51000000000.0,400000.0,1.5000240273137255,600000.0,2026-08-26 20:22
+2026-08-01,Analista Radicación,angiealvarado@habicredit.co,radicacion_monto,35780446054.0,36000000000.0,300000.0,0.9939012792777778,298170.38378333335,2026-08-26 20:22
+2026-08-01,Analista Radicación,michelabustos@habicredit.co,radicacion_monto,28438881252.0,50000000000.0,400000.0,0.56877762504,0.0,2026-08-26 20:22
+2026-08-01,Analista Radicación,claudiamurcia@habicredit.co,radicacion_monto,49075386618.0,51000000000.0,400000.0,0.9622624827058824,384904.9930823529,2026-08-26 20:22
+2026-08-01,Analista Radicación,ginadiaz@habicredit.co,radicacion_monto,22625087615.0,24000000000.0,350000.0,0.9427119839583332,329949.1943854167,2026-08-26 20:22
+2026-08-01,Analista Radicación,tomasospina@habicredit.co,radicacion_monto,15467861376.0,51000000000.0,300000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,vivianavinasco@habicredit.co,radicacion_monto,49443148099.0,46000000000.0,400000.0,1.0748510456304348,429940.4182521739,2026-08-26 20:22
+2026-08-01,Analista Radicación,yudyzamudio@habicredit.co,radicacion_monto,57340129240.0,50000000000.0,300000.0,1.1468025848,344040.77544,2026-08-26 20:22
+2026-08-01,Analista Radicación,yeinerlargo@habicredit.co,radicacion_monto,73063780017.0,51000000000.0,400000.0,1.4326231375882352,573049.2550352941,2026-08-26 20:22
+2026-08-01,Analista Radicación,nataliaaltamar@habicredit.co,radicacion_monto,22334750851.0,30000000000.0,300000.0,0.7444916950333333,90000.0,2026-08-26 20:22
+2026-08-01,Analista Radicación,karolguerrero@habicredit.co,reproceso_creditos,21.0,25.0,150000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,angiealvarado@habicredit.co,reproceso_creditos,25.0,25.0,150000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,johannelles@habicredit.co,reproceso_creditos,37.0,25.0,200000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,monicagonzalez@habicredit.co,reproceso_creditos,22.0,25.0,150000.0,0.88,132000.0,2026-08-26 20:22
+2026-08-01,Analista Radicación,leidymoscoso@habi.co,reproceso_creditos,37.0,40.0,200000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,tomasospina@habicredit.co,reproceso_creditos,15.0,25.0,150000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,hallersonescobar@habicredit.co,reproceso_creditos,2.0,25.0,150000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,vivianavinasco@habicredit.co,reproceso_creditos,21.0,25.0,200000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,katerinecardena@habicredit.co,reproceso_creditos,11.0,25.0,150000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,yeinerlargo@habicredit.co,reproceso_creditos,34.0,25.0,200000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,michelabustos@habicredit.co,reproceso_creditos,33.0,25.0,200000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,josejuliao@habicredit.co,reproceso_creditos,9.0,25.0,200000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,yudyzamudio@habicredit.co,reproceso_creditos,11.0,40.0,150000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,claudiamurcia@habicredit.co,reproceso_creditos,22.0,25.0,200000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,yeinerlargo@habicredit.co,reproceso_creditos_monto,9792298082.0,4000000000.0,200000.0,2.4480745205,489614.9041,2026-08-26 20:22
+2026-08-01,Analista Radicación,josejuliao@habicredit.co,reproceso_creditos_monto,2859438850.0,4000000000.0,200000.0,0.7148597125,60000.0,2026-08-26 20:22
+2026-08-01,Analista Radicación,leidymoscoso@habi.co,reproceso_creditos_monto,7604978848.0,7200000000.0,200000.0,1.0562470622222222,211249.41244444443,2026-08-26 20:22
+2026-08-01,Analista Radicación,yudyzamudio@habicredit.co,reproceso_creditos_monto,2428954522.0,7200000000.0,150000.0,0.3373547947222222,0.0,2026-08-26 20:22
+2026-08-01,Analista Radicación,angiealvarado@habicredit.co,reproceso_creditos_monto,4038532711.0,4000000000.0,150000.0,1.00963317775,151444.9766625,2026-08-26 20:22
+2026-08-01,Analista Radicación,vivianavinasco@habicredit.co,reproceso_creditos_monto,7845407685.0,4000000000.0,200000.0,1.96135192125,392270.38425,2026-08-26 20:22
+2026-08-01,Analista Radicación,michelabustos@habicredit.co,reproceso_creditos_monto,7510327764.0,4000000000.0,200000.0,1.877581941,375516.3882,2026-08-26 20:22
+2026-08-01,Analista Radicación,claudiamurcia@habicredit.co,reproceso_creditos_monto,7116868776.0,4000000000.0,200000.0,1.779217194,355843.4388,2026-08-26 20:22
+2026-08-01,Analista Radicación,johannelles@habicredit.co,reproceso_creditos_monto,7930586851.0,4000000000.0,200000.0,1.98264671275,396529.34255,2026-08-26 20:22
+2026-08-01,Analista Radicación,katerinecardena@habicredit.co,reproceso_creditos_monto,3784320895.0,4000000000.0,150000.0,0.94608022375,141912.0335625,2026-08-26 20:22
+2026-08-01,Analista Radicación,monicagonzalez@habicredit.co,reproceso_creditos_monto,3379656450.0,4000000000.0,150000.0,,,2026-08-26 20:22
+2026-08-01,Analista Radicación,tomasospina@habicredit.co,reproceso_creditos_monto,2616129500.0,4000000000.0,150000.0,0.654032375,0.0,2026-08-26 20:22
+2026-08-01,Analista Radicación,hallersonescobar@habicredit.co,reproceso_creditos_monto,1523207369.0,4000000000.0,150000.0,0.38080184225,0.0,2026-08-26 20:22
+2026-08-01,Analista Radicación,karolguerrero@habicredit.co,reproceso_creditos_monto,5963542524.0,4000000000.0,150000.0,1.490885631,223632.84465,2026-08-26 20:22
+2026-08-01,Analista de filtros (Estados),emilianodiaz@habicredit.co,actualizacion_estado,0.8257668711656442,0.8,600000.0,1.0322085889570551,619325.153374233,2026-08-26 20:22
+2026-08-01,Analista de filtros (Estados),emilianodiaz@habicredit.co,filtros_enviados_banco,1.0,0.9,150000.0,1.1111111111111112,166666.6666666667,2026-08-26 20:22
+2026-08-01,Director ibuyer,coordinadoribuyerliquidez@habicredit.co,AR_CI,0.6065573770491803,0.62,250000.0,0.9783183500793232,244579.58751983076,2026-08-26 20:22
+2026-08-01,Director ibuyer,coordinadoribuyerliquidez@habicredit.co,aprobacion_dual,0.6111111111111112,0.7,250000.0,0.8730158730158731,218253.96825396828,2026-08-26 20:22
+2026-08-01,Director ibuyer,coordinadoribuyerliquidez@habicredit.co,monto_desembolso,3532231793.0,12000000000.0,,0.2943526494166666,0.0,2026-08-26 20:22
+2026-08-01,Director ibuyer,coordinadoribuyerliquidez@habicredit.co,radicacion_cib,282.0,300.0,500000.0,0.854313725490196,427156.862745098,2026-08-26 20:22
+2026-08-01,Director ibuyer,coordinadoribuyerliquidez@habicredit.co,radicacion_cib_u,196.0,255.0,500000.0,,,2026-08-26 20:22
+2026-08-01,Director ibuyer,coordinadoribuyerliquidez@habicredit.co,radicacion_monto_cib,58405533669.0,60000000000.0,500000.0,,,2026-08-26 20:22
+2026-08-01,Director non ibuyer,andreaalvarez@habicredit.co,aprobacion_dual,0.4595588235294117,0.5,600000.0,0.9191176470588236,551470.5882352941,2026-08-26 20:22
+2026-08-01,Director non ibuyer,katherinecuartas@habicredit.co,aprobacion_dual,0.5063291139240507,0.5,600000.0,1.0126582278481011,607594.9367088608,2026-08-26 20:22
+2026-08-01,Director non ibuyer,paolacastro@habi.co,aprobacion_dual,0.4237668161434977,0.5,600000.0,0.8475336322869955,508520.1793721973,2026-08-26 20:22
+2026-08-01,Director non ibuyer,luisaquijano@habicredit.co,aprobacion_dual,0.4858757062146893,0.5,600000.0,0.9717514124293786,583050.8474576272,2026-08-26 20:22
+2026-08-01,Director non ibuyer,carlosrios@habicredit.co,aprobacion_dual,0.4047619047619047,0.5,600000.0,0.8095238095238095,485714.28571428574,2026-08-26 20:22
+2026-08-01,Director non ibuyer,madeleingonzalez@habicredit.co,aprobacion_dual,0.2222222222222222,0.5,600000.0,0.4444444444444444,0.0,2026-08-26 20:22
+2026-08-01,Director non ibuyer,lorenarico@habi.co,aprobacion_dual,0.4850136239782016,0.5,600000.0,0.9700272479564032,582016.348773842,2026-08-26 20:22
+2026-08-01,Director non ibuyer,raulerazo@habicredit.co,aprobacion_dual,0.6021505376344086,0.5,600000.0,1.2043010752688172,722580.6451612903,2026-08-26 20:22
+2026-08-01,Director non ibuyer,madianchitiva@habi.co,aprobacion_dual,0.4745762711864407,0.5,600000.0,0.9491525423728814,569491.5254237289,2026-08-26 20:22
+2026-08-01,Director non ibuyer,lorenagutierrez@habi.co,aprobacion_dual,0.4816176470588235,0.5,600000.0,0.9632352941176472,577941.1764705882,2026-08-26 20:22
+2026-08-01,Director non ibuyer,evelynguzman@habicredit.co,aprobacion_dual,0.4181818181818181,0.5,600000.0,0.8363636363636363,501818.18181818177,2026-08-26 20:22
+2026-08-01,Director non ibuyer,juangalan@habicredit.co,aprobacion_dual,0.4621513944223107,0.5,600000.0,0.9243027888446216,554581.6733067728,2026-08-26 20:22
+2026-08-01,Director non ibuyer,raulerazo@habicredit.co,monto_desembolso,3075222764.0,12000000000.0,2500000.0,0.2562685636666666,0.0,2026-08-26 20:22
+2026-08-01,Director non ibuyer,madianchitiva@habi.co,monto_desembolso,4191347310.0,12000000000.0,2500000.0,0.3492789425,0.0,2026-08-26 20:22
+2026-08-01,Director non ibuyer,evelynguzman@habicredit.co,monto_desembolso,220000000.0,4000000000.0,1000000.0,0.055,0.0,2026-08-26 20:22
+2026-08-01,Director non ibuyer,katherinecuartas@habicredit.co,monto_desembolso,9189045017.0,20000000000.0,5000000.0,0.45945225085,0.0,2026-08-26 20:22
+2026-08-01,Director non ibuyer,madeleingonzalez@habicredit.co,monto_desembolso,245000000.0,4000000000.0,1000000.0,0.06125,0.0,2026-08-26 20:22
+2026-08-01,Director non ibuyer,lorenarico@habi.co,monto_desembolso,7338470247.0,24000000000.0,5000000.0,0.305769593625,0.0,2026-08-26 20:22
+2026-08-01,Director non ibuyer,carlosrios@habicredit.co,monto_desembolso,5512653592.0,12000000000.0,2500000.0,0.4593877993333333,0.0,2026-08-26 20:22
+2026-08-01,Director non ibuyer,luisaquijano@habicredit.co,monto_desembolso,1566257988.0,4000000000.0,1000000.0,0.391564497,0.0,2026-08-26 20:22
+2026-08-01,Director non ibuyer,juangalan@habicredit.co,monto_desembolso,2631744694.0,12000000000.0,2500000.0,0.2193120578333333,0.0,2026-08-26 20:22
+2026-08-01,Director non ibuyer,paolacastro@habi.co,monto_desembolso,7386562297.0,24000000000.0,5000000.0,0.3077734290416666,0.0,2026-08-26 20:22
+2026-08-01,Director non ibuyer,lorenagutierrez@habi.co,monto_desembolso,4569396085.0,20000000000.0,5000000.0,0.22846980425,0.0,2026-08-26 20:22
+2026-08-01,Director non ibuyer,andreaalvarez@habicredit.co,monto_desembolso,2570400428.0,12000000000.0,2500000.0,0.2142000356666666,0.0,2026-08-26 20:22
+2026-08-01,Director non ibuyer,evelynguzman@habicredit.co,nuevos_brokers,0.0,1.0,600000.0,0.0,0.0,2026-08-26 20:22
+2026-08-01,Director non ibuyer,andreaalvarez@habicredit.co,nuevos_brokers,0.0,1.0,600000.0,0.0,0.0,2026-08-26 20:22
+2026-08-01,Director non ibuyer,katherinecuartas@habicredit.co,nuevos_brokers,0.0,1.0,600000.0,0.0,0.0,2026-08-26 20:22
+2026-08-01,Director non ibuyer,juangalan@habicredit.co,nuevos_brokers,0.0,1.0,600000.0,0.0,0.0,2026-08-26 20:22
+2026-08-01,Director non ibuyer,madeleingonzalez@habicredit.co,nuevos_brokers,0.0,1.0,600000.0,0.0,0.0,2026-08-26 20:22
+2026-08-01,Director non ibuyer,lorenagutierrez@habi.co,nuevos_brokers,0.0,1.0,600000.0,0.0,0.0,2026-08-26 20:22
+2026-08-01,Director non ibuyer,lorenarico@habi.co,nuevos_brokers,0.0,1.0,600000.0,0.0,0.0,2026-08-26 20:22
+2026-08-01,Director non ibuyer,madianchitiva@habi.co,nuevos_brokers,0.0,1.0,600000.0,0.0,0.0,2026-08-26 20:22
+2026-08-01,Director non ibuyer,raulerazo@habicredit.co,nuevos_brokers,0.0,1.0,600000.0,0.0,0.0,2026-08-26 20:22
+2026-08-01,Director non ibuyer,paolacastro@habi.co,nuevos_brokers,0.0,1.0,600000.0,0.0,0.0,2026-08-26 20:22
+2026-08-01,Director non ibuyer,carlosrios@habicredit.co,nuevos_brokers,0.0,1.0,600000.0,0.0,0.0,2026-08-26 20:22
+2026-08-01,Director non ibuyer,luisaquijano@habicredit.co,nuevos_brokers,0.0,1.0,600000.0,0.0,0.0,2026-08-26 20:22
+2026-08-01,Director non ibuyer,carlosrios@habicredit.co,radicacion,120.0,323.0,1600000.0,,,2026-08-26 20:22
+2026-08-01,Director non ibuyer,lorenagutierrez@habi.co,radicacion,157.0,323.0,1200000.0,,,2026-08-26 20:22
+2026-08-01,Director non ibuyer,andreaalvarez@habicredit.co,radicacion,164.0,238.0,1200000.0,,,2026-08-26 20:22
+2026-08-01,Director non ibuyer,evelynguzman@habicredit.co,radicacion,36.0,127.5,1200000.0,,,2026-08-26 20:22
+2026-08-01,Director non ibuyer,madianchitiva@habi.co,radicacion,261.0,323.0,1200000.0,0.8080495356037152,969659.4427244582,2026-08-26 20:22
+2026-08-01,Director non ibuyer,paolacastro@habi.co,radicacion,257.0,323.0,1200000.0,,,2026-08-26 20:22
+2026-08-01,Director non ibuyer,katherinecuartas@habicredit.co,radicacion,287.0,323.0,1200000.0,,,2026-08-26 20:22
+2026-08-01,Director non ibuyer,luisaquijano@habicredit.co,radicacion,126.0,127.5,1200000.0,0.9882352941176472,1185882.3529411766,2026-08-26 20:22
+2026-08-01,Director non ibuyer,juangalan@habicredit.co,radicacion,192.0,323.0,1200000.0,,,2026-08-26 20:22
+2026-08-01,Director non ibuyer,lorenarico@habi.co,radicacion,215.0,323.0,1200000.0,,,2026-08-26 20:22
+2026-08-01,Director non ibuyer,madeleingonzalez@habicredit.co,radicacion,21.0,85.0,1200000.0,0.2470588235294117,296470.58823529416,2026-08-26 20:22
+2026-08-01,Director non ibuyer,raulerazo@habicredit.co,radicacion,219.0,323.0,1200000.0,,,2026-08-26 20:22
+2026-08-01,Director non ibuyer,paolacastro@habi.co,radicacion_monto,77200412389.0,64600000000.0,1200000.0,1.195052823359133,1434063.3880309598,2026-08-26 20:22
+2026-08-01,Director non ibuyer,carlosrios@habicredit.co,radicacion_monto,34340360756.0,64600000000.0,1600000.0,0.5315845318266254,0.0,2026-08-26 20:22
+2026-08-01,Director non ibuyer,andreaalvarez@habicredit.co,radicacion_monto,45334523465.0,47600000000.0,1200000.0,0.9524059551470588,1142887.146176471,2026-08-26 20:22
+2026-08-01,Director non ibuyer,raulerazo@habicredit.co,radicacion_monto,51355436780.0,64600000000.0,1200000.0,0.7949758015479876,360000.0,2026-08-26 20:22
+2026-08-01,Director non ibuyer,madianchitiva@habi.co,radicacion_monto,50455786307.0,64600000000.0,1200000.0,,,2026-08-26 20:22
+2026-08-01,Director non ibuyer,lorenagutierrez@habi.co,radicacion_monto,36409489034.0,64600000000.0,1200000.0,0.5636143813312694,0.0,2026-08-26 20:22
+2026-08-01,Director non ibuyer,madeleingonzalez@habicredit.co,radicacion_monto,3266709002.0,17000000000.0,1200000.0,,,2026-08-26 20:22
+2026-08-01,Director non ibuyer,luisaquijano@habicredit.co,radicacion_monto,24651604903.0,25500000000.0,1200000.0,,,2026-08-26 20:22
+2026-08-01,Director non ibuyer,evelynguzman@habicredit.co,radicacion_monto,11300243503.0,25500000000.0,1200000.0,0.4431468040392157,531776.1648470588,2026-08-26 20:22
+2026-08-01,Director non ibuyer,juangalan@habicredit.co,radicacion_monto,44224206616.0,64600000000.0,1200000.0,0.6845852417337461,0.0,2026-08-26 20:22
+2026-08-01,Director non ibuyer,lorenarico@habi.co,radicacion_monto,53451471547.0,64600000000.0,1200000.0,0.8274221601702786,992906.5922043344,2026-08-26 20:22
+2026-08-01,Director non ibuyer,katherinecuartas@habicredit.co,radicacion_monto,80269707640.0,64600000000.0,1200000.0,1.24256513374613,1491078.1604953562,2026-08-26 20:22
+2026-08-01,Ejecutivo COLEX,colex@habicredit.co,aprobacion_dual,0.84,0.5,500000.0,1.68,650000.0,2026-08-26 20:22
+2026-08-01,Ejecutivo COLEX,colex@habicredit.co,monto_desembolso,197000000.0,400000000.0,500000.0,0.4925,0.0,2026-08-26 20:22
+2026-08-01,Ejecutivo COLEX,colex@habicredit.co,radicacion,21.0,30.0,500000.0,,,2026-08-26 20:22
+2026-08-01,Ejecutivo COLEX,colex@habicredit.co,radicacion_monto,5435238478.0,6000000000.0,500000.0,0.9058730796666666,452936.53983333334,2026-08-26 20:22
+2026-08-01,Ejecutivo Cero Goles,jefersonrincon@habicredit.co,tiempo_respuesta_precio_full,1.0,0.9,250000.0,1.1111111111111112,277777.7777777778,2026-08-26 20:22
+2026-08-01,Ejecutivo Cero Goles,jefersonrincon@habicredit.co,tiempo_respuesta_precio_full,1.0,0.9,250000.0,1.1111111111111112,277777.7777777778,2026-08-26 20:22
+2026-08-01,Ejecutivo Cero Goles,jefersonrincon@habicredit.co,tiempo_respuesta_precio_no_full,1.0,0.9,250000.0,1.1111111111111112,277777.7777777778,2026-08-26 20:22
+2026-08-01,Ejecutivo Cero Goles,jefersonrincon@habicredit.co,tiempo_respuesta_precio_no_full,1.0,0.9,250000.0,1.1111111111111112,277777.7777777778,2026-08-26 20:22
+2026-08-01,Ejecutivo Comercial Habicredit (Comercial Convenios inmobiliarios Ciudades),davidsolano@habicredit.co,aprobaciones_inmo_ciudades,0.5510204081632653,0.5,500000.0,1.1020408163265305,551020.4081632652,2026-08-26 20:22
+2026-08-01,Ejecutivo Comercial Habicredit (Comercial Convenios inmobiliarios Ciudades),javiercastelblanco@habicredit.co,aprobaciones_inmo_ciudades,0.4285714285714285,0.5,500000.0,0.8571428571428571,428571.4285714285,2026-08-26 20:22
+2026-08-01,Ejecutivo Comercial Habicredit (Comercial Convenios inmobiliarios Ciudades),nelsoncervera@habicredit.co,aprobaciones_inmo_ciudades,0.3157894736842105,0.5,500000.0,0.631578947368421,0.0,2026-08-26 20:22
+2026-08-01,Ejecutivo Comercial Habicredit (Comercial Convenios inmobiliarios Ciudades),javiercastelblanco@habicredit.co,dias_aprobacion,4.5,7.0,200000.0,1.5555555555555556,260000.0,2026-08-26 20:22
+2026-08-01,Ejecutivo Comercial Habicredit (Comercial Convenios inmobiliarios Ciudades),davidsolano@habicredit.co,monto_desembolsos_inmo_ciudades,143768000.0,1000000000.0,500000.0,0.143768,0.0,2026-08-26 20:22
+2026-08-01,Ejecutivo Comercial Habicredit (Comercial Convenios inmobiliarios Ciudades),javiercastelblanco@habicredit.co,radicaciones_inmo_ciudades,5.0,70.0,800000.0,,,2026-08-26 20:22
+2026-08-01,Ejecutivo Comercial Habicredit (Comercial Convenios inmobiliarios Ciudades),davidsolano@habicredit.co,radicaciones_inmo_ciudades,45.0,70.0,500000.0,0.6428571428571429,0.0,2026-08-26 20:22
+2026-08-01,Ejecutivo Comercial Habicredit (Comercial Convenios inmobiliarios Ciudades),nelsoncervera@habicredit.co,radicaciones_inmo_ciudades,10.0,70.0,800000.0,0.1428571428571428,0.0,2026-08-26 20:22
+2026-08-01,Ejecutivo Comercial Habicredit (Comercial Convenios inmobiliarios Ciudades),davidsolano@habicredit.co,radicaciones_inmo_ciudades_monto,8193186324.0,14000000000.0,500000.0,,,2026-08-26 20:22
+2026-08-01,Ejecutivo Comercial Habicredit (Comercial Convenios inmobiliarios Ciudades),javiercastelblanco@habicredit.co,radicaciones_inmo_ciudades_monto,1279183038.0,14000000000.0,800000.0,0.091370217,0.0,2026-08-26 20:22
+2026-08-01,Ejecutivo Comercial Habicredit (Comercial Convenios inmobiliarios Ciudades),nelsoncervera@habicredit.co,radicaciones_inmo_ciudades_monto,1551397000.0,14000000000.0,800000.0,,,2026-08-26 20:22
+2026-08-01,Ejecutivo ibuyer,nidiasanchez@habicredit.co,AR_CI,0.6065573770491803,0.62,100000.0,0.9783183500793232,97831.83500793231,2026-08-26 20:22
+2026-08-01,Ejecutivo ibuyer,ladyparra@habicredit.co,AR_CI,0.6065573770491803,0.62,100000.0,0.9783183500793232,97831.83500793231,2026-08-26 20:22
+2026-08-01,Ejecutivo ibuyer,glorialeon@habi.co,AR_CI,0.6065573770491803,0.62,100000.0,0.9783183500793232,97831.83500793231,2026-08-26 20:22
+2026-08-01,Ejecutivo ibuyer,yulianagarcia@habi.co,AR_CI,0.6065573770491803,0.62,100000.0,0.9783183500793232,97831.83500793231,2026-08-26 20:22
+2026-08-01,Ejecutivo ibuyer,nidiasanchez@habicredit.co,aprobacion_dual,0.5205479452054794,0.7,200000.0,0.7436399217221135,60000.0,2026-08-26 20:22
+2026-08-01,Ejecutivo ibuyer,glorialeon@habi.co,aprobacion_dual,0.6588235294117647,0.7,200000.0,0.9411764705882354,188235.29411764708,2026-08-26 20:22
+2026-08-01,Ejecutivo ibuyer,ladyparra@habicredit.co,aprobacion_dual,0.632183908045977,0.7,200000.0,0.90311986863711,180623.97372742204,2026-08-26 20:22
+2026-08-01,Ejecutivo ibuyer,yulianagarcia@habi.co,aprobacion_dual,0.620253164556962,0.7,200000.0,0.8860759493670887,177215.18987341772,2026-08-26 20:22
+2026-08-01,Ejecutivo ibuyer,nidiasanchez@habicredit.co,monto_desembolso,822678630.0,3333000000.0,,0.2468282718271827,0.0,2026-08-26 20:22
+2026-08-01,Ejecutivo ibuyer,ladyparra@habicredit.co,monto_desembolso,864938956.0,3333000000.0,,0.2595076375637564,0.0,2026-08-26 20:22
+2026-08-01,Ejecutivo ibuyer,yulianagarcia@habi.co,monto_desembolso,862261087.0,3333000000.0,,0.258704196519652,0.0,2026-08-26 20:22
+2026-08-01,Ejecutivo ibuyer,glorialeon@habi.co,monto_desembolso,982353120.0,3333000000.0,,0.2947354095409541,0.0,2026-08-26 20:22
+2026-08-01,Ejecutivo ibuyer,nidiasanchez@habicredit.co,radicacion_cib,75.0,75.0,300000.0,0.9,270000.0,2026-08-26 20:22
+2026-08-01,Ejecutivo ibuyer,yulianagarcia@habi.co,radicacion_cib,66.0,75.0,300000.0,0.7850980392156863,90000.0,2026-08-26 20:22
+2026-08-01,Ejecutivo ibuyer,ladyparra@habicredit.co,radicacion_cib,79.0,75.0,300000.0,0.9188235294117646,275647.0588235294,2026-08-26 20:22
+2026-08-01,Ejecutivo ibuyer,glorialeon@habi.co,radicacion_cib,62.0,75.0,300000.0,0.8133333333333334,244000.0,2026-08-26 20:22
+2026-08-01,Ejecutivo ibuyer,ladyparra@habicredit.co,radicacion_cib_u,50.0,63.75,300000.0,,,2026-08-26 20:22
+2026-08-01,Ejecutivo ibuyer,glorialeon@habi.co,radicacion_cib_u,51.0,63.75,300000.0,,,2026-08-26 20:22
+2026-08-01,Ejecutivo ibuyer,nidiasanchez@habicredit.co,radicacion_cib_u,51.0,63.75,300000.0,,,2026-08-26 20:22
+2026-08-01,Ejecutivo ibuyer,yulianagarcia@habi.co,radicacion_cib_u,44.0,63.75,300000.0,,,2026-08-26 20:22
+2026-08-01,Ejecutivo ibuyer,nidiasanchez@habicredit.co,radicacion_monto_cib,15336868770.0,15000000000.0,300000.0,,,2026-08-26 20:22
+2026-08-01,Ejecutivo ibuyer,yulianagarcia@habi.co,radicacion_monto_cib,14197720293.0,15000000000.0,300000.0,,,2026-08-26 20:22
+2026-08-01,Ejecutivo ibuyer,ladyparra@habicredit.co,radicacion_monto_cib,15453950144.0,15000000000.0,300000.0,,,2026-08-26 20:22
+2026-08-01,Ejecutivo ibuyer,glorialeon@habi.co,radicacion_monto_cib,13416994462.0,15000000000.0,300000.0,,,2026-08-26 20:22
+2026-08-01,Gerente Comercial,sammyvargas@habicredit.co,aprobacion_dual,0.4783634933123525,0.5,1500000.0,0.956726986624705,1435090.4799370577,2026-08-26 20:22
+2026-08-01,Gerente Comercial,sammyvargas@habicredit.co,radicacion,2764.0,3659.0,2000000.0,,,2026-08-26 20:22
+2026-08-01,Gerente Comercial,sammyvargas@habicredit.co,radicacion_monto,681327723694.0,731800000000.0,2000000.0,0.9310299585870456,1862059.917174091,2026-08-26 20:22
+2026-08-01,KAM,dianamora@habicredit.co,aprobaciones_kam,73.0,80.0,300000.0,0.9125,273750.0,2026-08-26 20:22
+2026-08-01,KAM,anagonzalez@habi.co,aprobaciones_kam,97.0,80.0,300000.0,1.2125,363750.0,2026-08-26 20:22
+2026-08-01,KAM,mairabernal@habi.co,aprobaciones_kam,112.0,80.0,300000.0,1.4,420000.0,2026-08-26 20:22
+2026-08-01,KAM,lunalopez@habicredit.co,aprobaciones_kam,72.0,80.0,300000.0,0.9,270000.0,2026-08-26 20:22
+2026-08-01,KAM,lunalopez@habicredit.co,calidad_dev_pre_legalizacion,1.0,0.85,400000.0,1.1764705882352942,470588.2352941177,2026-08-26 20:22
+2026-08-01,KAM,mairabernal@habi.co,calidad_dev_pre_legalizacion,1.0,0.85,400000.0,1.1764705882352942,470588.2352941177,2026-08-26 20:22
+2026-08-01,KAM,dianamora@habicredit.co,calidad_dev_pre_legalizacion,1.0,0.85,400000.0,1.1764705882352942,470588.2352941177,2026-08-26 20:22
+2026-08-01,KAM,anagonzalez@habi.co,calidad_dev_pre_legalizacion,1.0,0.85,400000.0,1.1764705882352942,470588.2352941177,2026-08-26 20:22
+2026-08-01,KAM,mairabernal@habi.co,calidad_kam,0.840937114673243,0.9,300000.0,0.9343745718591588,280312.37155774765,2026-08-26 20:22
+2026-08-01,KAM,anagonzalez@habi.co,calidad_kam,0.8442408376963351,0.9,300000.0,0.93804537521815,281413.612565445,2026-08-26 20:22
+2026-08-01,KAM,lunalopez@habicredit.co,calidad_kam,0.8096026490066225,0.9,300000.0,0.8995584988962472,269867.5496688741,2026-08-26 20:22
+2026-08-01,KAM,dianamora@habicredit.co,calidad_kam,0.8411371237458194,0.9,300000.0,0.9345968041620216,280379.04124860646,2026-08-26 20:22
+2026-08-01,Supervisor Legalización,edilbertobotia@habi.co,cantidad_desembolsos,118.0,200.0,400000.0,0.5617305248333333,0.0,2026-08-26 20:22
+2026-08-01,Supervisor Legalización,yeisonlopez@habicredit.co,cantidad_desembolsos,71.0,180.0,700000.0,0.3325783849972222,0.0,2026-08-26 20:22
+2026-08-01,Supervisor Legalización,adrianaflorido@habi.co,cantidad_desembolsos,72.0,290.0,400000.0,0.22154337780721,0.0,2026-08-26 20:22
+2026-08-01,Supervisor Legalización,adrianaflorido@habi.co,cumplimiento_gestion_rotacion,0.3924528301886792,0.7,150000.0,0.5606469002695419,0.0,2026-08-26 20:22
+2026-08-01,Supervisor Legalización,edilbertobotia@habi.co,cumplimiento_gestion_rotacion,0.457838850718301,0.7,150000.0,0.6540555010261444,0.0,2026-08-26 20:22
+2026-08-01,Supervisor Legalización,yeisonlopez@habicredit.co,cumplimiento_gestion_rotacion,0.4777562862669245,0.7,300000.0,0.6825089803813209,0.0,2026-08-26 20:22
+2026-08-01,Supervisor Legalización,yeisonlopez@habicredit.co,firma_ordenes_ofertas_escrituras,120.0,200.0,700000.0,0.6,0.0,2026-08-26 20:22
+2026-08-01,Supervisor Legalización,adrianaflorido@habi.co,firma_ordenes_ofertas_escrituras,188.0,280.0,300000.0,0.6714285714285714,0.0,2026-08-26 20:22
+2026-08-01,Supervisor Legalización,edilbertobotia@habi.co,firma_ordenes_ofertas_escrituras,282.0,230.0,300000.0,1.2260869565217392,367826.0869565217,2026-08-26 20:22
+2026-08-01,Supervisor Legalización,adrianaflorido@habi.co,monto_desembolso,12857518974.0,66000000000.0,400000.0,,,2026-08-26 20:22
+2026-08-01,Supervisor Legalización,yeisonlopez@habicredit.co,monto_desembolso,10828493022.0,40000000000.0,700000.0,,,2026-08-26 20:22
+2026-08-01,Supervisor Legalización,edilbertobotia@habi.co,monto_desembolso,25606130384.0,48000000000.0,400000.0,,,2026-08-26 20:22
+2026-08-01,Supervisor Radicación,oscaramezquita@habi.co,dias_sancion,5.479744136460572,6.0,400000.0,1.0949416342412417,437976.6536964967,2026-08-26 20:22
+2026-08-01,Supervisor Radicación,oscaramezquita@habi.co,radicacion,2764.0,3659.0,900000.0,,,2026-08-26 20:22
+2026-08-01,Supervisor Radicación,oscaramezquita@habi.co,radicacion_monto,681327723694.0,731800000000.0,900000.0,0.9310299585870456,837926.9627283411,2026-08-26 20:22
+2026-08-01,Supervisor Radicación,oscaramezquita@habi.co,reproceso_creditos,305.0,300.0,700000.0,,,2026-08-26 20:22
+2026-08-01,Supervisor Radicación,oscaramezquita@habi.co,reproceso_creditos_monto,75691514254.0,50000000000.0,700000.0,1.51383028508,1059681.199556,2026-08-26 20:22

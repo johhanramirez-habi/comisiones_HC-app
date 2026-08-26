@@ -319,6 +319,40 @@
                                     WHEN p_ejecucion <= .7999 THEN base_commission *.3
                                     WHEN p_ejecucion > .7999 THEN base_commission * p_ejecucion
                                 END
+                        WHEN indicador = 'monto_desembolso'  ----- Esquema de tramos fijos por monto desembolsado (Esquemas/202608 Comisiones Habicredit COL) ----
+                            THEN
+                                CASE
+                                    WHEN posicion = 'Gerente Comercial' THEN
+                                        CASE
+                                            WHEN ejecucion < 134000000000 THEN 0
+                                            WHEN ejecucion < 156000000000 THEN 3000000
+                                            ELSE 5000000
+                                        END
+                                    WHEN beneficiado IN ('luisaquijano@habicredit.co', 'madeleingonzalez@habicredit.co', 'evelynguzman@habicredit.co') THEN
+                                        CASE
+                                            WHEN ejecucion < 3000000000 THEN 0
+                                            WHEN ejecucion < 4000000000 THEN 500000
+                                            ELSE 1000000
+                                        END
+                                    WHEN beneficiado IN ('andreaalvarez@habicredit.co', 'madianchitiva@habi.co', 'juangalan@habicredit.co', 'carlosrios@habicredit.co', 'raulerazo@habicredit.co') THEN
+                                        CASE
+                                            WHEN ejecucion < 10000000000 THEN 0
+                                            WHEN ejecucion < 12000000000 THEN 1500000
+                                            ELSE 2500000
+                                        END
+                                    WHEN beneficiado IN ('katherinecuartas@habicredit.co', 'lorenagutierrez@habi.co') THEN
+                                        CASE
+                                            WHEN ejecucion < 18000000000 THEN 0
+                                            WHEN ejecucion < 20000000000 THEN 3000000
+                                            ELSE 5000000
+                                        END
+                                    WHEN beneficiado IN ('lorenarico@habi.co', 'paolacastro@habi.co') THEN
+                                        CASE
+                                            WHEN ejecucion < 21000000000 THEN 0
+                                            WHEN ejecucion < 24000000000 THEN 3000000
+                                            ELSE 5000000
+                                        END
+                                END
                         WHEN indicador IN ('dev_banco_broker')
                             THEN 
                                 CASE

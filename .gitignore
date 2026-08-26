@@ -15,6 +15,9 @@ data/confirmaciones_demo.csv
 data/Metas comisiones internas HC - data.csv
 data/diccionario_indicadores_comisiones_co.csv
 
+# Esquemas de comisiones con nombre + correo + bono individual por persona
+Esquemas/
+
 # Streamlit
 .streamlit/secrets.toml
 

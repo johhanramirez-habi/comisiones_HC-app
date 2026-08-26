@@ -1481,7 +1481,7 @@ BEGIN
       mes_comision_input AS mes_comision,
       'Gerente Comercial' AS posicion,
       'sammyvargas@habicredit.co' AS beneficiado,
-      -- SUM(monto_desembolso) AS monto_desembolso,
+      SUM(monto_desembolso) AS monto_desembolso,
       SUM(radicacion_analista) AS radicacion,
       SUM(monto_solicitado_analista) AS radicacion_monto,
       MAX(nbg.nuevos_brokers) AS nuevos_brokers,
@@ -2296,7 +2296,7 @@ BEGIN
 
   SELECT * FROM cp_gerente_comercial
   UNPIVOT (
-    ejecucion FOR indicador IN (radicacion, radicacion_monto, aprobacion_dual, nuevos_brokers)
+    ejecucion FOR indicador IN (monto_desembolso, radicacion, radicacion_monto, aprobacion_dual, nuevos_brokers)
   )
 
   UNION ALL
