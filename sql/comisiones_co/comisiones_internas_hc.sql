@@ -1444,11 +1444,18 @@ BEGIN
           --pre.broker_min_rad,
           --pre.productividad,
 
-          -- Meta Nuevos Broker (Esquemas/202608 Comisiones Habicredit COL): un solo indicador
+          -- Desde 2026-08-01 (Esquemas/202608 Comisiones Habicredit COL): un solo indicador
           -- combinado -- broker nuevo del mes que ademas radico minimo 2 operaciones -- sobre
           -- la meta de brokers nuevos. broker_min_rad es una meta aparte que solo aplica a la
           -- Gerente Comercial (ver nuevos_brokers_gerente), no a los directores.
-          SAFE_DIVIDE(brokers_mas_2_rad, brokers_nuevos) AS nuevos_brokers,
+          -- Antes de ese mes se deja intacta la formula original (promedio de dos indicadores)
+          -- para que una recorrida de un mes anterior siga reproduciendo lo que ya se pago.
+          CASE
+              WHEN mes_comision_input >= DATE('2026-08-01') THEN SAFE_DIVIDE(brokers_mas_2_rad, brokers_nuevos)
+              ELSE SAFE_DIVIDE(
+                     SAFE_DIVIDE(vinculaciones, brokers_nuevos) + SAFE_DIVIDE(brokers_mas_2_rad, broker_min_rad)
+                   , 2)
+          END AS nuevos_brokers,
         FROM pre
         ORDER BY 1 ASC
     ),
@@ -1481,7 +1488,10 @@ BEGIN
       mes_comision_input AS mes_comision,
       'Gerente Comercial' AS posicion,
       'sammyvargas@habicredit.co' AS beneficiado,
-      SUM(monto_desembolso) AS monto_desembolso,
+      -- monto_desembolso se reactiva desde 2026-08-01 (Esquemas/202608 Comisiones Habicredit
+      -- COL). Antes de ese mes debe seguir en NULL (como se calculo/pago originalmente) si el
+      -- PROCEDURE se vuelve a correr para un mes anterior.
+      CASE WHEN mes_comision_input >= DATE('2026-08-01') THEN SUM(monto_desembolso) ELSE NULL END AS monto_desembolso,
       SUM(radicacion_analista) AS radicacion,
       SUM(monto_solicitado_analista) AS radicacion_monto,
       MAX(nbg.nuevos_brokers) AS nuevos_brokers,

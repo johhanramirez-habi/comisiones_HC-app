@@ -319,7 +319,7 @@
                                     WHEN p_ejecucion <= .7999 THEN base_commission *.3
                                     WHEN p_ejecucion > .7999 THEN base_commission * p_ejecucion
                                 END
-                        WHEN indicador = 'monto_desembolso'  ----- Esquema de tramos fijos por monto desembolsado (Esquemas/202608 Comisiones Habicredit COL) ----
+                        WHEN indicador = 'monto_desembolso' AND mes_comision >= DATE('2026-08-01')  ----- Esquema de tramos fijos por monto desembolsado, vigente desde 2026-08-01 (Esquemas/202608 Comisiones Habicredit COL). Meses anteriores caen al esquema generico de bandas de mas abajo, igual que se calculo/pago entonces. ----
                             THEN
                                 CASE
                                     WHEN posicion = 'Gerente Comercial' THEN
