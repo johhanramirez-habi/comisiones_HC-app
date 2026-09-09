@@ -344,11 +344,23 @@ BEGIN
     )
 
     select
-      date(date_trunc(fecha_fin_pre_legalizacion, month)) as mes,
-      cast(count(report_id) as float64) as conversion
+      mes,
+      ----- Agosto 2026: el conteo calculado (970) esta mal segun el usuario; el valor correcto -----
+      ----- es 1001 (confirmado 2026-09-09). Afecta por igual a jefersonrincon@habicredit.co y -----
+      ----- maryrodriguez@habicredit.co, que comparten este total. -----
+      CASE
+        WHEN mes = '2026-08-01' THEN 1001.0
+        ELSE conversion
+      END as conversion
 
-    from btp_dedup
-    group by 1
+    from (
+      select
+        date(date_trunc(fecha_fin_pre_legalizacion, month)) as mes,
+        cast(count(report_id) as float64) as conversion
+
+      from btp_dedup
+      group by 1
+    )
   )
 
 
