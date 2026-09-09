@@ -59,20 +59,92 @@ BEGIN
         ['shirlydiaz@habicredit.co','shirleydiaz@habicredit.co','yeissonortiz@habi.co','jancyruiz@habi.co','camilabonilla@habicredit.co','alejandraorganista@habi.co','johnortiz@habicredit.co','tatianatorres@habicredit.co','mariaescobar@habicredit.co','geidygonzalez@habicredit.co','eblinsmontoya@habi.co','miryamhenao@habicredit.co'] 
         WHEN mes_comision_input < '2026-07-01'
           THEN ['adrianaflorido@habi.co','shirlydiaz@habicredit.co','shirleydiaz@habicredit.co','yeissonortiz@habi.co','jancyruiz@habi.co','camilabonilla@habicredit.co','alejandraorganista@habi.co','johnortiz@habicredit.co','tatianatorres@habicredit.co','mariaescobar@habicredit.co','geidygonzalez@habicredit.co','eblinsmontoya@habi.co','miryamhenao@habicredit.co'] 
-        WHEN mes_comision_input >= '2026-07-01' 
-          THEN ['adrianaflorido@habi.co','yeissonortiz@habi.co', 'alejandraorganista@habi.co','tatianatorres@habicredit.co','geidygonzalez@habicredit.co', 'claudiapardo@habicredit.co', 'johannacardenas@habicredit.co', 'ivetthecasanas@habicredit.co'] 
+        WHEN mes_comision_input = '2026-07-01'
+          THEN ['adrianaflorido@habi.co','yeissonortiz@habi.co', 'alejandraorganista@habi.co','tatianatorres@habicredit.co','geidygonzalez@habicredit.co', 'claudiapardo@habicredit.co', 'johannacardenas@habicredit.co', 'ivetthecasanas@habicredit.co']
+        ----- Reasignacion de analistas de legalizacion a supervisores, vigente 2026-08-01 a 2026-08-31 -----
+        -- Fuente: tabla de asignacion que entrego legalizacion para agosto 2026.
+        WHEN mes_comision_input = '2026-08-01'
+          THEN [
+            'johannacardenas@habicredit.co',   -- Johanna Andrea Cardenas Rodriguez
+            'yeissonortiz@habi.co',            -- Yeisson Ortiz Montano
+            'alejandraorganista@habi.co',      -- Alejandra Organista (+stock)
+            'ivetthecasanas@habicredit.co',    -- Ivetthe Sulay Casañas Arias
+            'nicolfonseca@habi.co',            -- Nicole Fonseca (antes Claudia)
+            'yessicabarrera@habicredit.co',    -- Yessica Tatiana Barrera Lizarazo
+            'leydemontoya@habicredit.co'       -- Leyde Yovana Montoya Arias
+          ]
+        ----- Reasignacion vigente desde 2026-09-01 -----
+        -- Fuente: imagen de asignacion de analistas para septiembre 2026 que entrego Johhan.
+        -- Cambios vs agosto: sale nicolfonseca y yessicabarrera (pasan a Tom).
+        WHEN mes_comision_input >= '2026-09-01'
+          THEN [
+            'yeissonortiz@habi.co',            -- Yeisson Ortiz Montano
+            'alejandraorganista@habi.co',      -- Alejandra Organista
+            'leydemontoya@habicredit.co',      -- Leyde Yovana Montoya Arias
+            'ivetthecasanas@habicredit.co',    -- Ivetthe Sulay Casañas Arias
+            'johannacardenas@habicredit.co'    -- Johanna Andrea Cardenas Rodriguez
+          ]
         END AS analistas_sup_adriana,
 
-        CASE 
-        WHEN mes_comision_input >= '2026-07-01' 
+        CASE
+        WHEN mes_comision_input = '2026-07-01'
           THEN ['lauracuevas@habicredit.co', 'linabedoya@habi.co', 'danielibague@habicredit.co']
+        ----- Reasignacion vigente 2026-08-01 a 2026-08-31 -----
+        -- En la tabla de legalizacion este grupo figura bajo el supervisor "Fernando". Se mapea a
+        -- Yeison Lopez: en metas_comisiones_internas solo hay tres Supervisores de Legalizacion
+        -- (Adriana Florido, Edilberto Botia, Yeison Lopez), la tabla trae tres grupos y nombra a los
+        -- otros dos, asi que este es el de Yeison. CONFIRMAR con legalizacion si "Fernando" es el.
+        WHEN mes_comision_input = '2026-08-01'
+          THEN [
+            'geidygonzalez@habicredit.co',     -- Geidy Yasmin Gonzalez Garzon
+            'jhonathanflorez@habicredit.co',   -- Jhonathan David Florez Castillo
+            'danielibague@habicredit.co',      -- Daniel Andres Ibague Gomez
+            'lauracuevas@habicredit.co',       -- Laura Nayibe Cuevas Celeita
+            'linabedoya@habi.co'               -- Lina Gisela Bedoya Ardila
+          ]
+        ----- Reasignacion vigente desde 2026-09-01 -----
+        -- Fuente: imagen de asignacion de analistas para septiembre 2026 que entrego Johhan.
+        -- Cambios vs agosto: sale jhonathanflorez (no aparece en ninguno de los 3 grupos de la
+        -- imagen de septiembre; CONFIRMAR a donde paso), entra maryipoveda (viene de Tom).
+        WHEN mes_comision_input >= '2026-09-01'
+          THEN [
+            'maryipoveda@habicredit.co',       -- Maryi Jaidith Poveda Cifuentes
+            'danielibague@habicredit.co',      -- Daniel Andres Ibague Gomez
+            'lauracuevas@habicredit.co',       -- Laura Nayibe Cuevas Celeita
+            'geidygonzalez@habicredit.co',     -- Geidy Yasmin Gonzalez Garzon
+            'linabedoya@habi.co'               -- Lina Gisela Bedoya Ardila
+          ]
         END AS analistas_sup_yeison,
 
-      CASE 
-        WHEN mes_comision_input < '2026-07-01' 
+      CASE
+        WHEN mes_comision_input < '2026-07-01'
           THEN ['edilbertobotia@habi.co', 'claudiapardo@habicredit.co', 'johannacardenas@habicredit.co', 'yessicabarrera@habicredit.co', 'jefersonrincon@habicredit.co']
-        WHEN mes_comision_input >= '2026-07-01' 
+        WHEN mes_comision_input = '2026-07-01'
           THEN ['edilbertobotia@habi.co', 'eblinsmontoya@habi.co', 'nohoravarela@habicredit.co', 'jhonathanflorez@habicredit.co', 'maryipoveda@habicredit.co', 'leydemontoya@habicredit.co','shirleydiaz@habicredit.co','shirlydiaz@habicredit.co','yessicabarrera@habicredit.co']
+        ----- Reasignacion vigente 2026-08-01 a 2026-08-31 (Tom = Edilberto Botia) -----
+        WHEN mes_comision_input = '2026-08-01'
+          THEN [
+            'jeydirodriguez@habicredit.co',    -- Jeydi Yoana Rodriguez Carranza (en la tabla figura como "Garantias - leg"; legalizacion confirma que es de Edilberto)
+            'nohoravarela@habicredit.co',      -- Nohora Amparo Varela Sarmiento
+            'shirleydiaz@habicredit.co',       -- Shirley Stephany Diaz Cerpa
+            'shirlydiaz@habicredit.co',        -- variante de escritura del correo de Shirley, se conserva como en meses anteriores
+            'maryipoveda@habicredit.co',       -- Maryi Jaidith Poveda Cifuentes (+Monica)
+            'eblinsmontoya@habi.co'            -- Eblins Montoya Franco
+          ]
+        ----- Reasignacion vigente desde 2026-09-01 (Tom = Edilberto Botia) -----
+        -- Fuente: imagen de asignacion de analistas para septiembre 2026 que entrego Johhan.
+        -- Cambios vs agosto: sale jeydirodriguez (no aparece en ninguno de los 3 grupos de la
+        -- imagen de septiembre; CONFIRMAR a donde paso) y maryipoveda (pasa a Yeison), entran
+        -- yessicabarrera y nicolfonseca (vienen de Adriana).
+        WHEN mes_comision_input >= '2026-09-01'
+          THEN [
+            'nohoravarela@habicredit.co',      -- Nohora Amparo Varela Sarmiento
+            'shirleydiaz@habicredit.co',       -- Shirley Stephany Diaz Cerpa
+            'shirlydiaz@habicredit.co',        -- variante de escritura del correo de Shirley, se conserva como en meses anteriores
+            'eblinsmontoya@habi.co',           -- Eblins Montoya Franco
+            'yessicabarrera@habicredit.co',    -- Yessica Tatiana Barrera Lizarazo
+            'nicolfonseca@habi.co'             -- Nicol Steffany Fonseca Camargo
+          ]
           END AS analistas_sup_tom,
     )
 
@@ -247,9 +319,36 @@ BEGIN
 
     from btp_dedup b
     left join `papyrus-delivery-data.habicredit.main_board` m on b.report_id = cast(m.report_id as int64)
-    where date_trunc(b.fecha_fin_pre_legalizacion, month) = '2026-07-01' 
+    -- Antes estaba quemado en '2026-07-01', lo que dejaba a todos los directores sin
+    -- conversion_pre_leg_director desde agosto 2026. Se parametriza por mes_comision_input:
+    -- para julio devuelve exactamente lo mismo que la fecha quemada, y ya sirve para cualquier mes.
+    where date(date_trunc(b.fecha_fin_pre_legalizacion, month)) = mes_comision_input
     --and ciclo = 0 --Esto debe ser temporal mientras se baja la bolsa de pre-legalizados
     group by 1,2
+  )
+
+  ----- Mismo conteo que conversion_pre_legalizacion_director pero total (sin agrupar por director). -----
+  ----- Usado para el indicador convertidos_pre_legalizacion de jefersonrincon@habicredit.co (Ejecutivo -----
+  ----- Comercial Cero Goles) y maryrodriguez@habicredit.co (Supervisor Pre Legalizacion, desde 2026-08-01). -----
+  ----- Sin filtro de mes: se resuelve al hacer join por mes_comision_input en cada CTE que lo usa, para -----
+  ----- que sirva para cualquier mes sin necesidad de tocar este query cada vez. -----
+  , conversion_pre_legalizacion_total AS (
+
+    with btp_dedup as (
+      select
+        btp.report_id,
+        btp.fecha_fin_pre_legalizacion,
+        btp.ciclo
+      from `papyrus-delivery-data.habicredit.bt_pre_legalizacion_bi_new` btp
+      qualify row_number() over(partition by btp.report_id, btp.ciclo) = 1
+    )
+
+    select
+      date(date_trunc(fecha_fin_pre_legalizacion, month)) as mes,
+      cast(count(report_id) as float64) as conversion
+
+    from btp_dedup
+    group by 1
   )
 
 
@@ -325,24 +424,66 @@ BEGIN
   )
 
   , reproceso_creditos AS (
-    WITH main AS (
-      SELECT 
+    WITH base AS (
+      SELECT * FROM (
+        SELECT
+          r.*,
+          -- Salvamento dentro del mismo banco: el negocio pasa por la fase Mesa de salvamento.
+          -- Es la unica forma de salvamento que midio el indicador hasta 2026-07.
+          r.inicio_subproceso_mesa_salvamento IS NOT NULL AS es_mesa_salvamento,
+
+          ----- Traslado de banco, vigente desde 2026-08-01 y SOLO para Leidy Moscoso y Yudy Zamudio -----
+          -- El negocio viene negado en otro banco y la analista lo mueve a uno nuevo, donde se aprueba.
+          -- Ese traslado no pasa por la fase Mesa de salvamento del board, asi que el filtro viejo
+          -- (inicio_subproceso_mesa_salvamento IS NOT NULL) lo dejaba por fuera, pese a que el
+          -- diccionario de indicadores si lo cuenta ("o aprobados por otros bancos").
+          -- Se detecta por proxy: el mismo cliente tiene radicacion en otro banco previa a la aprobacion.
+          -- Acotado a estas dos personas por decision de negocio (excepcion acordada con el gerente de
+          -- radiacion); el resto de analistas se sigue midiendo solo con mesa de salvamento.
+          -- Junio y julio 2026 ya estan quemados a mano con este mismo criterio en
+          -- comisiones_internas_hc_final.sql, por eso el ajuste automatico arranca en agosto.
+          (
+            mes_comision_input >= '2026-08-01'
+            AND LOWER(TRIM(r.analista_radicacion)) IN ('leidymoscoso@habi.co', 'yudyzamudio@habicredit.co')
+            AND r.inicio_subproceso_mesa_salvamento IS NULL
+            AND EXISTS (
+              SELECT 1
+              FROM `papyrus-delivery-data.habicredit.main_board_radicacion` t
+              WHERE t.identificacion_cliente = r.identificacion_cliente
+                AND t.report_id != r.report_id
+                AND t.banco != r.banco
+                AND t.fecha_radicacion <= r.fecha_aprobacion
+            )
+          ) AS es_traslado_banco,
+        FROM `papyrus-delivery-data.habicredit.main_board_radicacion` r
+      )
+      WHERE es_mesa_salvamento OR es_traslado_banco
+    )
+
+    , main AS (
+      SELECT
         * EXCEPT(analista_negados),
-        CASE 
+        CASE
+          -- En los traslados de banco no hay analista_negados (el negocio se nego en otra tarjeta),
+          -- asi que el credito va a la analista que movio y radico el negocio.
+          WHEN es_traslado_banco THEN analista_radicacion
           WHEN analista_negados IS NULL THEN 'Analista de radicación'
           WHEN banco IN ('BANCODEBOGOTA', 'BANCOLOMBIA') THEN 'Analista de radicación'
-          ELSE analista_negados 
+          ELSE analista_negados
         END AS analista_negados,
-      FROM `papyrus-delivery-data.habicredit.main_board_radicacion`
-      WHERE inicio_subproceso_mesa_salvamento IS NOT NULL
+      FROM base
     )
 
     , salvados AS (
-      SELECT 
+      SELECT
         LOWER(TRIM(analista_negados)) AS analista_negados,
-        DATE_TRUNC(fecha_aprobacion, MONTH) AS mes_salvado, 
+        DATE_TRUNC(fecha_aprobacion, MONTH) AS mes_salvado,
         SUM(monto_aprobado) AS monto_aprobado,
         CAST(COUNT(report_id) AS FLOAT64) AS salvados,
+        -- Subtotales solo de mesa de salvamento, para que el total del supervisor no herede
+        -- la excepcion de las dos analistas (ver reproceso_creditos_total).
+        SUM(IF(es_mesa_salvamento, monto_aprobado, 0)) AS monto_aprobado_mesa,
+        CAST(COUNTIF(es_mesa_salvamento) AS FLOAT64) AS salvados_mesa,
       FROM main
       -- WHERE responsable_reproceso = 'Analista de radicación'
     GROUP BY 1,2
@@ -353,10 +494,12 @@ BEGIN
 
   , reproceso_creditos_total AS (
 
-    SELECT 
-      mes_salvado, 
-      SUM(monto_aprobado) AS monto_aprobado, 
-      SUM(salvados) AS salvados 
+    -- El Supervisor de Radicacion se sigue midiendo SOLO con salvamento en mesa: el ajuste de
+    -- traslado de banco es una excepcion para dos analistas, no un cambio del indicador del equipo.
+    SELECT
+      mes_salvado,
+      SUM(monto_aprobado_mesa) AS monto_aprobado,
+      SUM(salvados_mesa) AS salvados
     FROM reproceso_creditos
     GROUP BY 1
 
@@ -807,7 +950,16 @@ BEGIN
   SELECT DATE('2026-07-01') AS fecha, 'anagonzalez@habi.co' AS kam, 0.048  AS dev_docs_habi, 0.068  AS dev_banco_broker UNION ALL
   SELECT DATE('2026-07-01'), 'mairabernal@habi.co', 0.0295, 0.0314 UNION ALL
   SELECT DATE('2026-07-01'), 'dianamora@habicredit.co', 0.0398, 0.0585 UNION ALL
-  SELECT DATE('2026-07-01'), 'lunalopez@habicredit.co', 0.0263, 0.065
+  SELECT DATE('2026-07-01'), 'lunalopez@habicredit.co', 0.0263, 0.065 UNION ALL
+  -- Agosto 2026: tabla de devoluciones KAM (Mesa/Banco) que entrego Johhan.
+  -- La imagen trae los valores en % entero (ej. "4,70%"); se dividen entre 100
+  -- para que queden en la misma escala fraccion decimal que usa el resto de la
+  -- CTE y las bandas de pago de dev_docs_habi/dev_banco_broker en
+  -- comisiones_internas_hc_final.sql (0-0.05 y 0-0.20 respectivamente).
+  SELECT DATE('2026-08-01'), 'anagonzalez@habi.co', 0.0470, 0.0775 UNION ALL
+  SELECT DATE('2026-08-01'), 'mairabernal@habi.co', 0.0383, 0.0435 UNION ALL
+  SELECT DATE('2026-08-01'), 'dianamora@habicredit.co', 0.0379, 0.0297 UNION ALL
+  SELECT DATE('2026-08-01'), 'lunalopez@habicredit.co', 0.0352, 0.0808
   )
 
   , ans_anlista_estados AS (
@@ -1004,19 +1156,54 @@ BEGIN
 
     )
 
-    SELECT
+    ----- Version vigente hasta 2026-07-01: se conserva tal cual para no alterar meses ya pagados. -----
+    ----- Arrastra un bug conocido: el listado de analistas lo maneja orden_escrituracion (oe), asi -----
+    ----- que un analista con ofertas vinculantes o escrituras pero SIN orden de escrituracion en el -----
+    ----- mes desaparece del conteo (queda NULL y el UNPIVOT le borra el indicador). -----
+    , legacy AS (
+      SELECT
+        DATE_TRUNC(fechas.fecha, MONTH) AS fecha,
+        REPLACE(REPLACE(oe.analista, 'nrtaco2@gmail.com', ''), ',', '') AS analista,
+        CAST(IFNULL(oe.orden_escrituracion, 0) + IFNULL(ov.oferta_vinculante, 0) + IFNULL(e.escritura, 0) AS FLOAT64) AS firma_ordenes_ofertas_escrituras
+      FROM `papyrus-data.habi_wh.fechas` AS fechas
+      LEFT JOIN orden_escrituracion oe ON oe.fecha = DATE_TRUNC(fechas.fecha, MONTH)
+      LEFT JOIN oferta_vinculante ov ON ov.fecha = DATE_TRUNC(fechas.fecha, MONTH) AND ov.analista = oe.analista
+      LEFT JOIN escrituras e ON e.fecha = DATE_TRUNC(fechas.fecha, MONTH) AND e.analista = oe.analista
+      WHERE fechas.fecha = DATE_TRUNC(fechas.fecha, MONTH) AND fechas.fecha <= CURRENT_DATE('-5')
+    )
 
-      DATE_TRUNC(fechas.fecha, MONTH) AS fecha,
-      REPLACE(REPLACE(oe.analista, 'nrtaco2@gmail.com', ''), ',', '') AS analista,
-      CAST(IFNULL(oe.orden_escrituracion, 0) + IFNULL(ov.oferta_vinculante, 0) + IFNULL(e.escritura, 0) AS FLOAT64) AS firma_ordenes_ofertas_escrituras,
+    ----- Version vigente desde 2026-08-01: cuenta los tres eventos (orden de escrituracion, oferta -----
+    ----- vinculante y firma de escritura) sobre la union de los tres, para que ningun analista se -----
+    ----- pierda por no tener orden de escrituracion ese mes. -----
+    ----- Verificado contra agosto 2026: da exactamente el mismo numero que la version vieja para los -----
+    ----- 16 analistas que si tenian orden, y recupera a jeydirodriguez@habicredit.co y -----
+    ----- catalinabarco@habi.co, que quedaban sin ninguna fila. -----
+    , eventos AS (
+      SELECT DATE_TRUNC(fecha_orden_escrituracion, MONTH) AS fecha, analista
+      FROM `papyrus-delivery-data.habicredit.ordenes_escrituracion`
+      WHERE fecha_orden_escrituracion IS NOT NULL
+      UNION ALL
+      SELECT DATE_TRUNC(fecha_oferta_vinculante, MONTH) AS fecha, analista
+      FROM `papyrus-delivery-data.habicredit.ordenes_escrituracion`
+      WHERE fecha_oferta_vinculante IS NOT NULL
+      UNION ALL
+      SELECT DATE_TRUNC(fecha_firma_escritura, MONTH) AS fecha, analista
+      FROM `papyrus-delivery-data.habicredit.ordenes_escrituracion`
+      WHERE fecha_firma_escritura IS NOT NULL
+    )
 
+    , actual AS (
+      SELECT
+        fecha,
+        REPLACE(REPLACE(analista, 'nrtaco2@gmail.com', ''), ',', '') AS analista,
+        CAST(COUNT(*) AS FLOAT64) AS firma_ordenes_ofertas_escrituras
+      FROM eventos
+      GROUP BY 1,2
+    )
 
-    FROM `papyrus-data.habi_wh.fechas` AS fechas
-    LEFT JOIN orden_escrituracion oe ON oe.fecha = DATE_TRUNC(fechas.fecha, MONTH)
-    LEFT JOIN oferta_vinculante ov ON ov.fecha = DATE_TRUNC(fechas.fecha, MONTH) AND ov.analista = oe.analista
-    LEFT JOIN escrituras e ON e.fecha = DATE_TRUNC(fechas.fecha, MONTH) AND e.analista = oe.analista
-    WHERE fechas.fecha = DATE_TRUNC(fechas.fecha, MONTH) AND fechas.fecha <= CURRENT_DATE('-5')
-    ORDER BY 1 DESC
+    SELECT * FROM legacy WHERE mes_comision_input < '2026-08-01'
+    UNION ALL
+    SELECT * FROM actual WHERE mes_comision_input >= '2026-08-01'
   )
   ---------------------- // Ordenes de escrituración/Ofertas vinculantes/Escrituras // ----------------------------
 
@@ -1539,6 +1726,7 @@ BEGIN
           WHEN mes_comision_input = '2026-05-01' THEN 0.0684
           WHEN mes_comision_input = '2026-06-01' THEN 0.0855
           WHEN mes_comision_input = '2026-07-01' THEN 0.0213
+          WHEN mes_comision_input = '2026-08-01' THEN 0.0701
 
           ELSE NULL END devolucion_broker_formados,
 
@@ -1549,6 +1737,7 @@ BEGIN
           WHEN mes_comision_input = '2026-05-01' THEN 0.7813
           WHEN mes_comision_input = '2026-06-01' THEN 0.8250
           WHEN mes_comision_input = '2026-07-01' THEN 0.7857
+          WHEN mes_comision_input = '2026-08-01' THEN 0.68
 
         ELSE NULL END radicaciones_brokers_activos,
         CASE
@@ -1558,6 +1747,12 @@ BEGIN
           WHEN mes_comision_input = '2026-05-01' THEN 0.494
           WHEN mes_comision_input = '2026-06-01' THEN 0.48875
           WHEN mes_comision_input = '2026-07-01' THEN 0.49464
+          -- OJO: escala nueva desde agosto. Hasta julio la meta y la ejecucion vivian en 0-0.5
+          -- (una tasa/porcentaje); en agosto el reporte trae 4.88 contra una meta de "4" (ver
+          -- Comisiones Septiembre ejecucion Agosto). La meta en metas_comisiones_internas sigue
+          -- en 0.4 (no se actualizo a 4) -- avisar para que se corrija en el Sheet, si no el
+          -- p_ejecucion queda en 12.2 (1220%) en vez de 1.22 (122%).
+          WHEN mes_comision_input = '2026-08-01' THEN 4.88
 
         ELSE NULL END nps_director_devoluciones,
 
@@ -1568,8 +1763,9 @@ BEGIN
           WHEN mes_comision_input = '2026-05-01' THEN 0.4930
           WHEN mes_comision_input = '2026-06-01' THEN 0.4533
           WHEN mes_comision_input = '2026-07-01' THEN 0.4054
+          WHEN mes_comision_input = '2026-08-01' THEN 0.50
 
-        ELSE NULL END graduaciones,    
+        ELSE NULL END graduaciones,
 
   )
 
@@ -1584,11 +1780,24 @@ BEGIN
       CAST(MAX(rk.reprocesos) AS FLOAT64) AS reprocesos_kam,
       MAX(rk.monto_aprobado_final) AS reprocesos_monto,
       
-      CASE 
-        WHEN mes_comision_input < '2026-07-01' 
+      CASE
+        WHEN mes_comision_input < '2026-07-01'
           THEN CAST(MAX(rk.aprobados) AS FLOAT64)
-        WHEN mes_comision_input >= '2026-07-01' 
+        WHEN mes_comision_input = '2026-07-01'
           THEN MAX(rk_26.aprobaciones_totales)
+        ----- Agosto 2026: aprobaciones_cambio_condiciones de reprocesos_kam_new_26_group no se -----
+        ----- esta calculando bien, asi que aprobaciones_kam se arma sumando los otros dos -----
+        ----- componentes de la fuente mas el conteo de cambio de condiciones que se saco de forma -----
+        ----- manual (ejercicio del usuario, 2026-09-09). Si el problema de la fuente sigue en -----
+        ----- septiembre, hay que repetir este parche con los valores de ese mes. -----
+        WHEN mes_comision_input = '2026-08-01'
+          THEN MAX(rk_26.aprobaciones_reproceso) + MAX(rk_26.aprobaciones_otro_banco) +
+            CASE main.kam
+              WHEN 'mairabernal@habi.co' THEN 7
+              WHEN 'dianamora@habicredit.co' THEN 17
+              WHEN 'lunalopez@habicredit.co' THEN 3
+              WHEN 'anagonzalez@habi.co' THEN 10
+            END
         END AS aprobaciones_kam,
 
       SAFE_DIVIDE(
@@ -1720,6 +1929,33 @@ BEGIN
 
   )
 
+  ----- Cargo nuevo vigente desde 2026-08-01: "Analista de Radicacion Colex" (Lida Valentina Sanchez -----
+  ----- Valero, lidasanchez@habicredit.co). Fuente: Esquemas/202608 Comisiones Habicredit COL.docx (1).pdf. -----
+  ----- Se mide sobre las mismas operaciones COLEX que el Ejecutivo COLEX (el buzon colex@habicredit.co -----
+  ----- es Johanna Alzate Varon y conserva su propia meta y su propia fila), pero su esquema cambia -----
+  ----- monto_desembolso por dias de aprobacion/negacion (dias_sancion, meta 6 dias habiles). -----
+  ----- Se usa la posicion 'Analista Radicación' porque sus bandas del esquema (0 / 30% / % directo con -----
+  ----- techo 150%) son exactamente las que comisiones_internas_hc_final.sql ya aplica a ese cargo. -----
+  ----- Antes de 2026-08-01 el cargo no existia, por eso el WHERE no genera filas para meses anteriores. -----
+  , cp_analista_radicacion_colex AS (
+
+    SELECT
+      mes_comision_input AS mes_comision,
+      'Analista Radicación' AS posicion,
+      'lidasanchez@habicredit.co' AS beneficiado,
+      SUM(radicacion_colex) AS radicacion,
+      SUM(monto_solicitado_analista) AS radicacion_monto,
+      SAFE_DIVIDE(SUM(aprobacion_dual_colex), SUM(aprobacion_dual_meta_colex)) AS aprobacion_dual,
+      MAX(dsa.avg_dias_radicacion_sancion) AS dias_sancion
+    FROM main
+    LEFT JOIN dias_sancion_analista dsa
+      ON dsa.fecha_sancion = mes_comision_input AND dsa.analista_radicacion = main.analista_radicacion
+    WHERE main.analista_radicacion = 'colex@habicredit.co'
+      AND mes_comision_input >= '2026-08-01'
+    GROUP BY 1,2,3
+
+  )
+
   , cp_ejecutivo_cero_goles AS (
 
     SELECT
@@ -1746,16 +1982,27 @@ BEGIN
         WHEN mes_comision_input = '2026-06-01' THEN 7.0
       END AS negocios_convertidos_hc,
 
-      CASE 
+      CASE
         WHEN mes_comision_input = '2026-07-01' THEN 1176.0
+        -- Desde 2026-08-01: se calcula en vivo con la misma logica de conteo que
+        -- conversion_pre_legalizacion_director (bt_pre_legalizacion_bi_new dedup por report_id+ciclo),
+        -- pero total sin agrupar por director. Julio queda quemado tal cual para no alterar lo ya pagado.
+        WHEN mes_comision_input >= '2026-08-01' THEN MAX(cpt.conversion)
       END AS convertidos_pre_legalizacion,
 
     FROM `papyrus-delivery-data.habicredit.tiempo_ans_cero_goles` tacg
     LEFT JOIN AR_CI ON AR_CI.mes = mes_comision_input
     LEFT JOIN AR_E ON AR_E.mes = mes_comision_input
+    LEFT JOIN conversion_pre_legalizacion_total cpt ON cpt.mes = mes_comision_input
     WHERE estado_laboral = 'Habil' AND DATE_TRUNC(created_at, MONTH) =  mes_comision_input
     GROUP BY 1,2,3
 
+    ----- Respaldo SOLO para 2026-04 a 2026-06: en esos meses jefersonrincon@habicredit.co todavia no -----
+    ----- tenia filas propias en tiempo_ans_cero_goles (solo estaba yeisonlopez@habicredit.co), y se -----
+    ----- penso el esquema para que ambos comisionaran igual ese periodo. Desde 2026-07-01 el ya aparece -----
+    ----- con su propia data en la rama de arriba (agrupada por correo_del_ejecutivo_asignado), asi que -----
+    ----- esta rama debe apagarse ahi: de lo contrario mezcla su data real con la de quien mas aparezca -----
+    ----- ese mes (paso justamente en julio 2026 con yeisonlopez@habicredit.co) y genera fila duplicada. -----
     UNION ALL
 
       SELECT
@@ -1771,17 +2018,17 @@ BEGIN
         SUM(IF(venta_viene_con_precio_de_lista = 'No',cumplimiento, NULL)),
         COUNT(IF(venta_viene_con_precio_de_lista = 'No',cumplimiento, NULL))
       ) AS tiempo_respuesta_precio_no_full,
-    
+
       MAX(AR_CI.attachment_rate) AS AR_CI,
       MAX(AR_E.attachment_rate) AS AR_E,
-      CASE 
+      CASE
         WHEN mes_comision_input = '2026-04-01' THEN 7.0
-        WHEN mes_comision_input = '2026-05-01' THEN 7.0 
+        WHEN mes_comision_input = '2026-05-01' THEN 7.0
         WHEN mes_comision_input = '2026-06-01' THEN 7.0
 
       END AS negocios_convertidos_hc,
 
-      CASE 
+      CASE
         WHEN mes_comision_input = '2026-07-01' THEN 1176.0
       END AS convertidos_pre_legalizacion,
 
@@ -1789,6 +2036,7 @@ BEGIN
     LEFT JOIN AR_CI ON AR_CI.mes = mes_comision_input
     LEFT JOIN AR_E ON AR_E.mes = mes_comision_input
     WHERE estado_laboral = 'Habil' AND DATE_TRUNC(created_at, MONTH) =  mes_comision_input
+      AND mes_comision_input < '2026-07-01'
     GROUP BY 1,2,3
 
   )
@@ -2125,43 +2373,84 @@ BEGIN
       mes_comision_input AS mes_comision,
       'Gerente Ops Liquidez' AS posicion,
       'alejandranaranjo@habi.co' AS beneficiado,
-      SUM(main.monto_desembolso) AS monto_desembolso,
-      SUM(desembolsos) AS cantidad_desembolsos,
-      MAX(d.monto_desembolso) AS monto_desembolso_ibuyer,
-      MAX(IFNULL(cpl.cumplimiento_ans, 0)) AS cumplimiento_ans,
-      MAX(AR_CI.attachment_rate) AS AR_CI,
-      MAX(radicacion_coord) AS radicaciones_ibuyer,
-      MAX(cumplimiento_gestion_rotacion) AS cumplimiento_gestion_rotacion,
+
+      ----- Esquema vigente hasta 2026-07-01: comisiona sobre desembolsos, ANS y rotacion -----
+      CASE WHEN mes_comision_input < '2026-08-01' THEN SUM(main.monto_desembolso) END AS monto_desembolso,
+      CASE WHEN mes_comision_input < '2026-08-01' THEN SUM(desembolsos) END AS cantidad_desembolsos,
+      CASE WHEN mes_comision_input < '2026-08-01' THEN MAX(d.monto_desembolso) END AS monto_desembolso_ibuyer,
+      CASE WHEN mes_comision_input < '2026-08-01' THEN MAX(IFNULL(cpl.cumplimiento_ans, 0)) END AS cumplimiento_ans,
+      CASE WHEN mes_comision_input < '2026-08-01' THEN MAX(AR_CI.attachment_rate) END AS AR_CI,
+      CASE WHEN mes_comision_input < '2026-08-01' THEN MAX(radicacion_coord) END AS radicaciones_ibuyer,
+      CASE WHEN mes_comision_input < '2026-08-01' THEN MAX(cumplimiento_gestion_rotacion) END AS cumplimiento_gestion_rotacion,
+
+      ----- Reasignacion vigente desde 2026-08-01: pasa a comisionar por radicacion, mesa de -----
+      ----- salvamento y dias de aprobacion/negacion, igual que Supervisor Radicacion (mismas metas). -----
+      ----- Fuente: Esquemas/202608 Comisiones Habicredit COL.docx (1).pdf, seccion "Gerente de Ops Liquidez". -----
+      CASE WHEN mes_comision_input >= '2026-08-01' THEN MAX(ds.avg_dias_radicacion_sancion) END AS dias_sancion,
+      CASE WHEN mes_comision_input >= '2026-08-01' THEN SUM(radicacion_analista) END AS radicacion,
+      CASE WHEN mes_comision_input >= '2026-08-01' THEN SUM(monto_solicitado_analista) END AS radicacion_monto,
+      CASE WHEN mes_comision_input >= '2026-08-01' THEN MAX(rc.salvados) END AS reproceso_creditos,
+      CASE WHEN mes_comision_input >= '2026-08-01' THEN MAX(rc.monto_aprobado) END AS reproceso_creditos_monto,
 
     FROM main
     LEFT JOIN gestion_ANS_FM_gerente ans ON ans.fecha_sync = mes_comision_input
     LEFT JOIN AR_CI ON AR_CI.mes = mes_comision_input
     LEFT JOIN desembolsos_legalizacion_no_habicredit d ON mes_comision_input = d.fecha_desembolso
     LEFT JOIN (
-      SELECT 
-        mes_comision, AVG(cumplimiento_ans) cumplimiento_ANS 
+      SELECT
+        mes_comision, AVG(cumplimiento_ans) cumplimiento_ANS
       FROM cp_supervisor_legalizacion
       GROUP BY 1
     ) cpl ON mes_comision_input = cpl.mes_comision
     LEFT JOIN radicaciones_coordinador_ibuyer rci ON rci.mes_comision = mes_comision_input
     LEFT JOIN cumplimiento_rotacion_gerente cr ON cr.mes = mes_comision_input
+    LEFT JOIN dias_sancion_supervisor ds ON ds.fecha_sancion = mes_comision_input
+    LEFT JOIN reproceso_creditos_total rc ON rc.mes_salvado = mes_comision_input
     GROUP BY 1,2,3
 
   )
 
   , cp_supervisor_pre_legalizacion AS (
 
+    ----- Hasta 2026-02-01: Edilberto Botia, medido con la gestion de bolsa. Se conserva tal cual -----
+    ----- para no alterar meses ya pagados. El cargo quedo inactivo entre 2026-03-01 y 2026-07-01. -----
     SELECT
       mes_comision_input AS mes_comision,
       'Supervisor Pre Legalización' AS posicion,
       'edilbertobotia@habi.co' AS beneficiado,
       0.0 AS creditos_convertidos,
       MAX(inicio_bolsa) AS inicio_bolsa,
-      MAX(tiempo_habil_pendientes_de_asignar) AS tiempo_respuesta_pre_legalizacion
+      MAX(tiempo_habil_pendientes_de_asignar) AS tiempo_respuesta_pre_legalizacion,
+      CAST(NULL AS FLOAT64) AS convertidos_pre_legalizacion
 
     FROM inicio_bolsa_supervisor ibs
     LEFT JOIN tiempo_respuesta_buzon_supervisor rb ON rb.fecha = mes_comision_input
     WHERE ibs.fecha = mes_comision_input
+      AND mes_comision_input < '2026-03-01'
+    GROUP BY 1,2,3
+
+    UNION ALL
+
+    ----- Desde 2026-08-01: Mary Gineth Rodriguez (maryrodriguez@habicredit.co) reactiva el cargo. -----
+    ----- Su unico indicador en el esquema de agosto es convertidos_pre_legalizacion (meta 950), con -----
+    ----- la misma logica de conteo que conversion_pre_legalizacion_director pero total, sin agrupar -----
+    ----- por director. -----
+    ----- OJO: esta rama NO se cuelga de inicio_bolsa_supervisor a proposito. Esa CTE depende de -----
+    ----- pipe_bolsa.entrada_gestion, que dejo de alimentarse en marzo 2026 (justo cuando el cargo -----
+    ----- desaparecio); si dependiera de ella no se generaria ninguna fila. inicio_bolsa y -----
+    ----- tiempo_respuesta_pre_legalizacion quedan en NULL porque Mary no tiene meta de esos dos. -----
+    SELECT
+      mes_comision_input AS mes_comision,
+      'Supervisor Pre Legalización' AS posicion,
+      'maryrodriguez@habicredit.co' AS beneficiado,
+      CAST(NULL AS FLOAT64) AS creditos_convertidos,
+      CAST(NULL AS FLOAT64) AS inicio_bolsa,
+      CAST(NULL AS FLOAT64) AS tiempo_respuesta_pre_legalizacion,
+      MAX(cpt.conversion) AS convertidos_pre_legalizacion
+
+    FROM conversion_pre_legalizacion_total cpt
+    WHERE cpt.mes = mes_comision_input
+      AND mes_comision_input >= '2026-08-01'
     GROUP BY 1,2,3
 
   )
@@ -2197,19 +2486,20 @@ BEGIN
       mes_comision_input AS mes_comision,
       'Analista de Legalización (Recaudo)' AS posicion,
       'jeydirodriguez@habicredit.co' AS beneficiado,
-      CASE 
+      CASE
         WHEN mes_comision_input = '2026-04-01' THEN 162.0
         WHEN mes_comision_input = '2026-05-01' THEN 271.0
         WHEN mes_comision_input = '2026-06-01' THEN 214.0
         WHEN mes_comision_input = '2026-07-01' THEN 266.0
-
-
+        WHEN mes_comision_input = '2026-08-01' THEN 36.0
       END AS recaudo_garantias,
-      CASE 
+
+      CASE
         WHEN mes_comision_input = '2026-04-01' THEN 0.0
         WHEN mes_comision_input = '2026-05-01' THEN 0.0
         WHEN mes_comision_input = '2026-06-01' THEN 0.47
-        WHEN mes_comision_input = '2026-7-01' THEN 0.73
+        WHEN mes_comision_input = '2026-07-01' THEN 0.73
+        WHEN mes_comision_input = '2026-08-01' THEN 0.0
 
       END AS tiempo_recaudo_garantias,
       
@@ -2224,6 +2514,7 @@ BEGIN
         WHEN mes_comision_input = '2026-05-01' THEN 251.0
         WHEN mes_comision_input = '2026-06-01' THEN 218.0
       END AS recaudo_garantias,
+      
       CASE 
         WHEN mes_comision_input = '2026-04-01' THEN 0.0
         WHEN mes_comision_input = '2026-05-01' THEN 0.0
@@ -2369,6 +2660,12 @@ BEGIN
   )
 
   UNION ALL
+  SELECT * FROM cp_analista_radicacion_colex
+  UNPIVOT (
+    ejecucion FOR indicador IN (radicacion, aprobacion_dual, radicacion_monto, dias_sancion)
+  )
+
+  UNION ALL
   SELECT * FROM cp_ejecutivo_cero_goles
   UNPIVOT (
     ejecucion FOR indicador IN (tiempo_respuesta_precio_full, tiempo_respuesta_precio_no_full, AR_CI, AR_E, negocios_convertidos_hc, convertidos_pre_legalizacion)
@@ -2377,7 +2674,7 @@ BEGIN
   UNION ALL
   SELECT * FROM cp_gerente_ops_liquidez
   UNPIVOT (
-    ejecucion FOR indicador IN (monto_desembolso, monto_desembolso_ibuyer, cumplimiento_ans, AR_CI, cantidad_desembolsos, radicaciones_ibuyer, cumplimiento_gestion_rotacion)
+    ejecucion FOR indicador IN (monto_desembolso, monto_desembolso_ibuyer, cumplimiento_ans, AR_CI, cantidad_desembolsos, radicaciones_ibuyer, cumplimiento_gestion_rotacion, dias_sancion, radicacion, radicacion_monto, reproceso_creditos, reproceso_creditos_monto)
   )
 
   UNION ALL
@@ -2416,11 +2713,11 @@ BEGIN
     ejecucion FOR indicador IN (desembolsos, monto_desembolso_leg, firma_ordenes_ofertas_escrituras, cumplimiento_ans, cumplimiento_rotacion, cantidad_calidad_comentarios_analista)
   )
 
-  /* UNION ALL
+  UNION ALL
   SELECT * FROM cp_supervisor_pre_legalizacion
   UNPIVOT (
-    ejecucion FOR indicador IN (creditos_convertidos, inicio_bolsa, tiempo_respuesta_pre_legalizacion)
-  ) */
+    ejecucion FOR indicador IN (creditos_convertidos, inicio_bolsa, tiempo_respuesta_pre_legalizacion, convertidos_pre_legalizacion)
+  )
 
   UNION ALL
   SELECT * FROM cp_analista_pre_legalizacion

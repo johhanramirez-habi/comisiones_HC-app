@@ -18,6 +18,9 @@ data/diccionario_indicadores_comisiones_co.csv
 # Esquemas de comisiones con nombre + correo + bono individual por persona
 Esquemas/
 
+# Simulaciones locales de comisiones (correo + bono individual por persona)
+data/simulaciones/
+
 # Streamlit
 .streamlit/secrets.toml
 

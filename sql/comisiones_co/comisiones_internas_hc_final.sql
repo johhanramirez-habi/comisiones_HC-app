@@ -28,8 +28,15 @@
                 WHEN mes_comision = '2026-07-01' AND indicador = 'firma_ordenes_ofertas_escrituras' AND beneficiado = 'nohoravarela@habicredit.co' THEN ejecucion + 1
 
 
+                ----- firma_ordenes_ofertas_escrituras, agosto 2026: quema revertida el 2026-09-09 -----
+                -- Se habia quemado el conteo de legalizacion para analistas y supervisores por un
+                -- problema de asignacion de analistas y firmas en agosto. El usuario pidio revertirlo:
+                -- agosto vuelve a pagar con la ejecucion que calcula el motor, como cualquier otro mes.
+                -- Excepcion pedida el mismo dia (2026-09-09) para estas dos personas:
+                WHEN mes_comision = '2026-08-01' AND indicador = 'firma_ordenes_ofertas_escrituras' AND beneficiado = 'jeydirodriguez@habicredit.co' THEN 15
+                WHEN mes_comision = '2026-08-01' AND indicador = 'firma_ordenes_ofertas_escrituras' AND beneficiado = 'nohoravarela@habicredit.co' THEN ejecucion - 14
 
-                
+
     ------------------
 
                 --WHEN indicador = 'monto_desembolso_leg' AND beneficiado = 'yessicabarrera@habicredit.co' THEN ejecucion + 50000000
@@ -686,11 +693,15 @@
         500000 AS base_commission,
         0.9962733188 AS p_ejecucion,
         498133 AS pago
-        	
+
     FROM (SELECT 1)
     WHERE date_sub(date_trunc(current_date('-5'), month), interval 1 month) = '2026-07-01'
 
-
+    ----- El parche UNION ALL de firma_ordenes_ofertas_escrituras de jeydirodriguez@habicredit.co -----
+    ----- para 2026-08-01 sigue sin hacer falta: el paso 1 ya le genera la fila (se corrigio -----
+    ----- ordenes_firmas, que perdia a los analistas sin orden de escrituracion en el mes). La quema -----
+    ----- general de agosto se revirtio, pero jeydirodriguez volvio a quedar con quema puntual -----
+    ----- (15, pedida el 2026-09-09) en el CASE de arriba, no por este UNION ALL. -----
 
 
 
